@@ -16,7 +16,7 @@ export function Article({ title, url, imageUrl, description }: ArticleProps) {
             className="h-full w-full flex flex-col group bg-white/40 backdrop-blur-sm border border-gray-100 rounded-2xl sm:rounded-3xl shadow-md hover:shadow-lg transition-all duration-300"
             style={{ minHeight: '350px' }}
         >
-            <div className="relative h-36 xs:h-40 sm:h-44 md:h-48 lg:h-52 overflow-hidden bg-gradient-to-br from-sky-50 to-white/70 rounded-t-2xl sm:rounded-t-3xl">"
+            <div className="relative h-36 xs:h-40 sm:h-44 md:h-48 lg:h-52 overflow-hidden bg-gradient-to-br from-sky-50 to-white/70 rounded-t-2xl sm:rounded-t-3xl">
                 <Image
                     src={imageUrl}
                     alt={title}

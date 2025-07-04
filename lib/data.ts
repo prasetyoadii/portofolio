@@ -1,6 +1,7 @@
-import React from "react";
-import { CgWorkAlt } from "react-icons/cg";
-import { LuGraduationCap } from "react-icons/lu";
+// These imports are no longer used but may be needed in the future
+// import React from "react";
+// import { CgWorkAlt } from "react-icons/cg";
+// import { LuGraduationCap } from "react-icons/lu";
 import dulangImg from "@/public/dulang.png";
 import mediumcloneImg from "@/public/medium-clone.png";
 import snackventureImg from "@/public/snackventure.png";

@@ -46,12 +46,12 @@ export default function About() {
                     transition={{ duration: 0.5, delay: 0.1 }}
                 >
                     <p>
-                        I'm a passionate web developer who enjoys solving real-world problems through clean, scalable code.
+                        I&apos;m a passionate web developer who enjoys solving real-world problems through clean, scalable code.
                         While I enjoy working across the full stack, I feel most in my element when working on the backend, designing APIs,
                         architecting systems, and managing databases.
                     </p>
                     <p>
-                        My background spans multiple technologies and frameworks, and I'm always excited to explore new tools that help build better applications.
+                        My background spans multiple technologies and frameworks, and I&apos;m always excited to explore new tools that help build better applications.
                     </p>
                 </motion.div>
 

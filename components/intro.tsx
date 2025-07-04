@@ -8,7 +8,7 @@ import { FaGithub, FaMedium } from 'react-icons/fa';
 import { HiMail } from 'react-icons/hi';
 import { useSectionInView } from "@/lib/hooks";
 import { useActiveSectionContext } from "@/context/active-section-context";
-import { Link } from '@react-email/components';
+// import { Link } from '@react-email/components';
 
 export default function Intro() {
     const { ref } = useSectionInView("Home");
@@ -43,7 +43,7 @@ export default function Intro() {
                         transition={{ duration: 0.5 }}
                         className="text-2xl sm:text-3xl md:text-5xl font-bold text-gray-800 mb-4 sm:mb-6"
                     >
-                        Hi, I'm Adi
+                        Hi, I&apos;m Adi
                     </motion.h1>
 
                     <motion.p

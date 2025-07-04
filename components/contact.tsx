@@ -62,7 +62,8 @@ export default function Contact() {
                     setSending(true);
 
                     try {
-                        const { data, error } = await sendEmail(formData);
+                        const response = await sendEmail(formData);
+                        const { error } = response;
 
                         if (error) {
                             showNotification("error", "Failed to send message");
@@ -75,8 +76,6 @@ export default function Contact() {
                         if (form instanceof HTMLFormElement) {
                             form.reset();
                         }
-                    } catch (error) {
-                        showNotification("error", "Something went wrong!");
                     } finally {
                         setSending(false);
                     }
