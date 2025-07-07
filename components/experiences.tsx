@@ -11,13 +11,13 @@ import { motion } from "framer-motion";
 import { useSectionInView } from "@/lib/hooks";
 
 export default function Experiences() {
-    const { ref } = useSectionInView("Experiences", 0.2);
+    const { ref } = useSectionInView("Experiences", 0.1);
 
     return (
         <section
             ref={ref}
             id="experiences"
-            className="scroll-mt-16 mx-auto max-w-6xl px-4 sm:px-6 py-20"
+            className="scroll-mt-16 mx-auto max-w-6xl px-4 sm:px-6 py-20 mb-15"
         >
             <motion.div
                 className="text-center mb-16"
@@ -77,7 +77,7 @@ export default function Experiences() {
                             <h3 className="text-xl font-bold text-gray-800 mb-1">
                                 {experience.title}
                             </h3>
-                            <ul className="list-disc pl-5 space-y-2 text-gray-600 text-sm sm:text-base">
+                            <ul className="list-disc pl-5 space-y-2 text-gray-600 text-sm sm:text-base ">
                                 {experience.description.split('\n').map((point, i) => (
                                     <li key={i}>{point}</li>
                                 ))}

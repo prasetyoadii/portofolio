@@ -9,7 +9,7 @@ import { FaBookOpen } from 'react-icons/fa';
 
 export default function Articles() {
     const containerRef = useRef<HTMLDivElement>(null);
-    const { ref } = useSectionInView("Articles");
+    const { ref } = useSectionInView("Articles", 0.2);
 
     return (
         <section
@@ -52,7 +52,7 @@ export default function Articles() {
                     </motion.p>
                 </div>
 
-                <div className="relative">
+                <div className="relative px-[27rem] sm:px-[25rem] md:px-[18rem] lg:px-[4rem] xl:px-0">
                     <div
                         ref={containerRef}
                         className="flex overflow-x-auto scroll-smooth snap-x snap-mandatory gap-3 sm:gap-4 px-1 pb-8 hide-scrollbar"
@@ -64,7 +64,7 @@ export default function Articles() {
                                 whileInView={{ opacity: 1, y: 0 }}
                                 viewport={{ once: true }}
                                 transition={{ duration: 0.4, delay: index * 0.1 }}
-                                className="flex-shrink-0 w-[11rem] sm:w-[11rem] md:w-[20rem] snap-center"
+                                className="flex-shrink-0 w-[11rem] sm:w-[11rem] md:w-[20rem] mx-auto snap-center"
                             >
                                 <Article {...article} />
                             </motion.div>
