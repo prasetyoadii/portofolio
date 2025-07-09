@@ -10,7 +10,6 @@ export default function Home() {
   return (
     <main className="flex flex-col items-center px-4">
       <Intro />
-      <div className="bg-blue-50"></div>
       <SectionDivider />
       <About />
       <Projects />

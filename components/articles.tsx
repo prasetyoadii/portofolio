@@ -34,7 +34,8 @@ export default function Articles() {
                         whileInView={{ opacity: 1, y: 0 }}
                         viewport={{ once: true }}
                         transition={{ duration: 0.5 }}
-                        className="text-2xl sm:text-3xl md:text-4xl lg:text-5xl font-bold text-gray-800 mb-2 sm:mb-3"
+                        className="text-3xl sm:text-4xl md:text-5xl  font-bold text-gray-800 mb-2 sm:mb-3"
+
                     >
                         My <span className="text-sky-600">Articles</span>
                     </motion.h2>

@@ -11,4 +11,13 @@
     .hide-scrollbar::-webkit-scrollbar {
         display: none;
     }
+
+    html,
+    body {
+        overflow-x: hidden;
+    }
+
+    * {
+        box-sizing: border-box;
+    }
 }

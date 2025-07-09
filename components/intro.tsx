@@ -8,10 +8,9 @@ import { FaGithub, FaMedium } from 'react-icons/fa';
 import { HiMail } from 'react-icons/hi';
 import { useSectionInView } from "@/lib/hooks";
 import { useActiveSectionContext } from "@/context/active-section-context";
-// import { Link } from '@react-email/components';
 
 export default function Intro() {
-    const { ref } = useSectionInView("Home");
+    const { ref } = useSectionInView("Home", 0.2);
     const { setActiveSection, setTimeOfLastClick } = useActiveSectionContext();
 
     return (
