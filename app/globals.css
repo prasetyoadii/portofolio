@@ -2,6 +2,44 @@
 @tailwind components;
 @tailwind utilities;
 
+/* Design tokens — mirror the Tailwind `brand` palette so plain CSS can use them. */
+:root {
+    --paper: #0b1e36;
+    --surface: #16294a;
+    --soft: #20375a;
+    --ink: #eaf1fb;
+    --muted: #93a6c3;
+    --primary: #5b93d6;
+    --primary-dark: #3f72af;
+    --accent: #f7c948;
+    /* Light hairline on a dark canvas. */
+    --line: rgba(255, 255, 255, 0.1);
+}
+
+@layer base {
+    html {
+        scroll-behavior: smooth;
+        -webkit-text-size-adjust: 100%;
+    }
+
+    body {
+        background-color: var(--paper);
+        color: var(--ink);
+        text-rendering: optimizeLegibility;
+    }
+
+    ::selection {
+        background: rgba(247, 201, 72, 0.28);
+        color: var(--ink);
+    }
+
+    :focus-visible {
+        outline: 2px solid var(--primary);
+        outline-offset: 3px;
+        border-radius: 8px;
+    }
+}
+
 @layer utilities {
     .hide-scrollbar {
         -ms-overflow-style: none;
@@ -12,6 +50,25 @@
         display: none;
     }
 
+    .text-balance {
+        text-wrap: balance;
+    }
+
+    .text-pretty {
+        text-wrap: pretty;
+    }
+
+    .bg-grid {
+        background-image: radial-gradient(circle at 1px 1px, rgba(17, 45, 78, 0.05) 1px, transparent 0);
+        background-size: 24px 24px;
+    }
+
+    /* Light-on-dark counterpart for the hero's dark surface. */
+    .bg-grid-dark {
+        background-image: radial-gradient(circle at 1px 1px, rgba(255, 255, 255, 0.06) 1px, transparent 0);
+        background-size: 24px 24px;
+    }
+
     html,
     body {
         overflow-x: hidden;
@@ -19,5 +76,18 @@
 
     * {
         box-sizing: border-box;
+    }
+}
+
+/* Respect users who prefer reduced motion: neutralize transitions + animations. */
+@media (prefers-reduced-motion: reduce) {
+
+    *,
+    *::before,
+    *::after {
+        animation-duration: 0.001ms !important;
+        animation-iteration-count: 1 !important;
+        transition-duration: 0.001ms !important;
+        scroll-behavior: auto !important;
     }
 }

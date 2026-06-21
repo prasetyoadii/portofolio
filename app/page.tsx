@@ -1,21 +1,25 @@
-import About from "@/components/about";
-import Articles from "@/components/articles";
-import Contact from "@/components/contact";
-import Experiences from "@/components/experiences";
-import Intro from "@/components/intro";
-import Projects from "@/components/projects";
-import SectionDivider from "@/components/section-divider";
+import { Container } from "@/components/ui/container";
+import Hero from "@/components/sections/hero";
+import About from "@/components/sections/about";
+import Experience from "@/components/sections/experience";
+import Projects from "@/components/sections/projects";
+import Skills from "@/components/sections/skills";
+import Articles from "@/components/sections/articles";
+import Contact from "@/components/sections/contact";
 
 export default function Home() {
   return (
-    <main className="flex flex-col items-center px-4">
-      <Intro />
-      <SectionDivider />
-      <About />
-      <Projects />
-      <Articles />
-      <Experiences />
-      <Contact />
-    </main>
-  )
+    <>
+      {/* Full-bleed dark "spotlight" hero — manages its own Container inside. */}
+      <Hero />
+      <Container className="flex flex-col">
+        <About />
+        <Experience />
+        <Projects />
+        <Skills />
+        <Articles />
+        <Contact />
+      </Container>
+    </>
+  );
 }
