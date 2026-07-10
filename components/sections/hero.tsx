@@ -11,7 +11,6 @@ import { profile } from "@/content/portfolio";
 import { Button } from "@/components/ui/button";
 import { SocialLinks } from "@/components/ui/social-links";
 import { Container } from "@/components/ui/container";
-import { Waveform } from "@/components/ui/waveform";
 import { EASE } from "@/lib/animation";
 
 // Name as a monument: first name on its own line, the rest below it.

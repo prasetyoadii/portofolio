@@ -61,9 +61,9 @@ export default function OpengraphImage() {
                     <div style={{ fontSize: 40, fontWeight: 600, color: "#5B93D6" }}>
                         {profile.role}
                     </div>
-                    <div style={{ fontSize: 28, color: "#93A6C3", maxWidth: 900 }}>
+                    {/* <div style={{ fontSize: 28, color: "#93A6C3", maxWidth: 900 }}>
                         {profile.subheadline}
-                    </div>
+                    </div> */}
                 </div>
 
                 <div style={{ fontSize: 24, color: "#93A6C3" }}>

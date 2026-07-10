@@ -1,6 +1,5 @@
 import type { ReactNode } from "react";
 import { Reveal } from "@/components/ui/reveal";
-import { Waveform } from "@/components/ui/waveform";
 import { cn } from "@/lib/cn";
 
 interface SectionHeaderProps {

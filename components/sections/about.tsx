@@ -1,12 +1,11 @@
 "use client";
 
-import { Layers, ShieldCheck, HeartHandshake, Lightbulb } from "lucide-react";
+import { Layers, ShieldCheck, Lightbulb } from "lucide-react";
 import { useSectionInView } from "@/lib/hooks";
 import { profile } from "@/content/portfolio";
 import { SectionHeader } from "@/components/ui/section-header";
 import { Reveal } from "@/components/ui/reveal";
 import { Card } from "@/components/ui/card";
-// import { Waveform } from "@/components/ui/waveform";
 
 const focusAreas = ["Backend", "Frontend", "Mobile Android"];
 
