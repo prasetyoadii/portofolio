@@ -1,29 +1,30 @@
 "use client";
 
-import { Layers, ShieldCheck, HeartHandshake } from "lucide-react";
+import { Layers, ShieldCheck, HeartHandshake, Lightbulb } from "lucide-react";
 import { useSectionInView } from "@/lib/hooks";
 import { profile } from "@/content/portfolio";
 import { SectionHeader } from "@/components/ui/section-header";
 import { Reveal } from "@/components/ui/reveal";
 import { Card } from "@/components/ui/card";
+// import { Waveform } from "@/components/ui/waveform";
 
-const focusAreas = ["Backend", "Frontend", "Mobile"];
+const focusAreas = ["Backend", "Frontend", "Mobile Android"];
 
 const values = [
     {
+        icon: Lightbulb,
+        title: "Under stand & Architect",
+        body: "I start by deeply understanding the requirement, then translate it into a system architecture that actually fits the problem.",
+    },
+    {
         icon: Layers,
-        title: "End-to-end",
-        body: "From database to UI — I ship features across the whole stack.",
+        title: "Build End-to-End",
+        body: "From architecture design, database schema, and backend logic to the frontend UI, then a CI/CD pipeline that ships it to production.",
     },
     {
         icon: ShieldCheck,
-        title: "Reliable",
-        body: "Clean, tested code that stays maintainable as it grows.",
-    },
-    {
-        icon: HeartHandshake,
-        title: "Human-centered",
-        body: "Accessible software that genuinely helps the people using it.",
+        title: "Engineer for Quality",
+        body: "SOLID principles and clean code as the foundation, backed by SonarQube, Sentry, Prometheus, and Grafana to keep systems observable and maintainable.",
     },
 ];
 
@@ -33,7 +34,7 @@ export default function About() {
     return (
         <section ref={ref} id="about" className="scroll-mt-24 py-20 sm:py-24">
             {/* Tinted panel — a soft blue wash sets this section apart from the paper. */}
-            <div className="overflow-hidden rounded-[1.75rem] border border-[color:var(--line)] bg-gradient-to-b from-brand-soft/55 to-brand-surface/40 p-6 backdrop-blur-sm sm:rounded-[2.5rem] sm:p-10 lg:p-14">
+            <div className="overflow-hidden rounded-[1.75rem] border border-[color:var(--line)] bg-gradient-to-b from-brand-soft/55 to-brand-surface/40 p-2 backdrop-blur-sm sm:rounded-[2.5rem] sm:p-10 lg:p-14">
                 <SectionHeader
                     eyebrow="About"
                     title={
@@ -44,7 +45,6 @@ export default function About() {
                             </span>
                         </>
                     }
-                    description="Software engineer in the making, building systems that stay clean as they grow."
                 />
 
                 <Reveal className="mx-auto mt-8 max-w-2xl space-y-4 text-pretty text-center text-base leading-relaxed text-brand-muted sm:text-lg">
@@ -53,17 +53,37 @@ export default function About() {
                     ))}
                 </Reveal>
 
-                <div className="mx-auto mt-10 grid max-w-5xl gap-4 sm:grid-cols-2 lg:grid-cols-4">
-                    {/* Focus — the one fully colored card. */}
-                    <Reveal>
-                        <Card className="flex h-full flex-col items-center justify-center gap-3 border-transparent bg-gradient-to-br from-brand-primary to-brand-primary-dark p-6 text-center text-white shadow-lift">
-                            <h3 className="font-display text-base font-semibold">Focus</h3>
-                            <p className="text-sm text-white/80">Where I spend my time.</p>
-                            <div className="mt-1 flex flex-wrap justify-center gap-2">
+                {/* Asymmetric bento — a tall colored anchor, one wide tile, two standard. */}
+                <div className="mx-auto mt-10 grid max-w-5xl gap-4 sm:grid-cols-2 lg:grid-cols-3">
+                    {/* Focus — the tall, fully colored anchor of the bento. */}
+                    <Reveal className="lg:row-span-2">
+                        <Card className="relative flex h-full flex-col justify-between gap-6 overflow-hidden border-transparent bg-gradient-to-br from-brand-primary to-brand-primary-dark p-6 text-white shadow-lift sm:p-7">
+                            {/* Faint grid + glow keep the colored tile from reading flat. */}
+                            <span
+                                aria-hidden
+                                className="pointer-events-none absolute inset-0 bg-grid-dark opacity-40"
+                            />
+                            <span
+                                aria-hidden
+                                className="pointer-events-none absolute -right-10 -top-10 h-40 w-40 rounded-full bg-brand-accent/20 blur-3xl"
+                            />
+                            <div className="relative">
+                                <span className="inline-flex items-center gap-2 rounded-full bg-white/15 px-3 py-1 text-xs font-semibold uppercase tracking-[0.16em] text-white">
+                                    {/* <Waveform size="sm" tone="accent" /> */}
+                                    Focus
+                                </span>
+                                <h3 className="mt-4 font-display text-2xl font-bold leading-tight">
+                                    Where I spend my time
+                                </h3>
+                                <p className="mt-2 text-sm text-white/75">
+                                    Comfortable working across multiple stacks and experienced in
+                                 </p>
+                            </div>
+                            <div className="relative flex flex-wrap gap-2">
                                 {focusAreas.map((area) => (
                                     <span
                                         key={area}
-                                        className="rounded-full border border-white/25 bg-white/15 px-2.5 py-1 text-xs font-medium text-white"
+                                        className="rounded-full border border-white/25 bg-white/10 px-3 py-1.5 text-sm font-medium text-white"
                                     >
                                         {area}
                                     </span>
@@ -74,16 +94,31 @@ export default function About() {
 
                     {values.map((value, i) => {
                         const Icon = value.icon;
+                        // The first value tile spans wide; the rest stay standard — varied sizes.
+                        const isWide = i === 0;
                         return (
-                            <Reveal key={value.title} delay={(i + 1) * 0.08}>
-                                <Card className="flex h-full flex-col items-center p-6 text-center transition-all duration-300 hover:-translate-y-1 hover:border-brand-primary/40 hover:shadow-lift">
-                                    <span className="inline-flex h-12 w-12 items-center justify-center rounded-2xl bg-brand-primary/10 text-brand-primary">
+                            <Reveal
+                                key={value.title}
+                                delay={(i + 1) * 0.08}
+                                className={isWide ? "lg:col-span-2" : undefined}
+                            >
+                                <Card
+                                    interactive
+                                    className={
+                                        isWide
+                                            ? "bg-grid flex h-full items-start gap-4 p-6 sm:items-center sm:gap-5"
+                                            : "flex h-full flex-col p-6"
+                                    }
+                                >
+                                    <span className="inline-flex h-12 w-12 flex-shrink-0 items-center justify-center rounded-2xl bg-brand-accent/10 text-brand-accent ring-1 ring-brand-accent/15">
                                         <Icon className="h-5 w-5" />
                                     </span>
-                                    <h3 className="mt-4 font-display text-base font-semibold text-brand-ink">
-                                        {value.title}
-                                    </h3>
-                                    <p className="mt-1 text-sm text-brand-muted">{value.body}</p>
+                                    <div className={isWide ? "" : "mt-4"}>
+                                        <h3 className="font-display text-base font-semibold text-brand-ink">
+                                            {value.title}
+                                        </h3>
+                                        <p className="mt-1 text-sm text-brand-muted">{value.body}</p>
+                                    </div>
                                 </Card>
                             </Reveal>
                         );

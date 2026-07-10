@@ -17,7 +17,7 @@ export function JsonLd() {
         url: siteUrl,
         image: `${siteUrl}/my-photo.jpg`,
         jobTitle: profile.role,
-        description: profile.subheadline,
+        // description: profile.subheadline,
         email: `mailto:${profile.email}`,
         alumniOf: {
             "@type": "CollegeOrUniversity",
@@ -43,7 +43,7 @@ export function JsonLd() {
         "@id": `${siteUrl}/#website`,
         name: "Prasetyo Adi — Portfolio",
         url: siteUrl,
-        description: profile.subheadline,
+        // description: profile.subheadline,
         inLanguage: "en",
         author: { "@id": personId },
     };

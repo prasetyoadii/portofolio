@@ -69,6 +69,48 @@
         background-size: 24px 24px;
     }
 
+    /* Film grain — breaks the flat "AI" look. Tiled SVG fractal noise, non-interactive. */
+    .bg-noise {
+        background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='160' height='160'%3E%3Cfilter id='n'%3E%3CfeTurbulence type='fractalNoise' baseFrequency='0.9' numOctaves='2' stitchTiles='stitch'/%3E%3C/filter%3E%3Crect width='100%25' height='100%25' filter='url(%23n)' opacity='0.55'/%3E%3C/svg%3E");
+    }
+
+    /* Gold counterpart to the blue gradient text — use sparingly for emphasis. */
+    .text-gradient-gold {
+        background-image: linear-gradient(to right, var(--accent), #fbe08a);
+        -webkit-background-clip: text;
+        background-clip: text;
+        color: transparent;
+    }
+
+    /* Cursor-tracked spotlight on cards. Falls back to a static top sheen. */
+    .card-spot {
+        position: relative;
+    }
+
+    .card-spot::before {
+        content: "";
+        position: absolute;
+        inset: 0;
+        border-radius: inherit;
+        padding: 1px;
+        background: radial-gradient(
+            18rem 18rem at var(--mx, 50%) var(--my, 0%),
+            rgba(247, 201, 72, 0.35),
+            rgba(91, 147, 214, 0.18) 35%,
+            transparent 60%
+        );
+        -webkit-mask: linear-gradient(#000 0 0) content-box, linear-gradient(#000 0 0);
+        -webkit-mask-composite: xor;
+        mask-composite: exclude;
+        opacity: 0;
+        transition: opacity 0.3s ease;
+        pointer-events: none;
+    }
+
+    .card-spot:hover::before {
+        opacity: 1;
+    }
+
     html,
     body {
         overflow-x: hidden;

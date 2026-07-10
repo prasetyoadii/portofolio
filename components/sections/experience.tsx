@@ -1,5 +1,6 @@
 "use client";
 
+import { motion, useReducedMotion } from "framer-motion";
 import { useSectionInView } from "@/lib/hooks";
 import { experiences } from "@/content/portfolio";
 import { SectionHeader } from "@/components/ui/section-header";
@@ -7,31 +8,49 @@ import { Reveal } from "@/components/ui/reveal";
 import { Card } from "@/components/ui/card";
 import { Badge } from "@/components/ui/badge";
 import { cn } from "@/lib/cn";
+import { EASE } from "@/lib/animation";
 
 export default function Experience() {
     const { ref } = useSectionInView("Experience", 0.2);
+    const reduce = useReducedMotion();
 
     return (
         <section ref={ref} id="experience" className="scroll-mt-24 py-20 sm:py-24">
             <SectionHeader
                 eyebrow="Experience"
                 title="Where I've contributed"
-                description="A short trail of roles where I shipped real work."
+                description="The experiences that have shaped my technical and professional journey"
                 align="left"
             />
 
-            <ol className="relative mt-10 space-y-5 before:absolute before:left-[7px] before:top-2 before:h-[calc(100%-1rem)] before:w-px before:bg-[color:var(--line)] sm:before:left-[9px]">
+            <ol className="relative mt-10">
+                {/* Connector: a faint static track with a gold→blue fill that draws in on scroll. */}
+                <span
+                    aria-hidden
+                    className="absolute left-[7px] top-2 h-[calc(100%-1rem)] w-px bg-[color:var(--line)] sm:left-[9px]"
+                />
+                <motion.span
+                    aria-hidden
+                    className="absolute left-[7px] top-2 h-[calc(100%-1rem)] w-px origin-top bg-gradient-to-b from-brand-accent via-brand-primary to-transparent sm:left-[9px]"
+                    initial={{ scaleY: reduce ? 1 : 0 }}
+                    whileInView={{ scaleY: 1 }}
+                    viewport={{ once: true, margin: "-80px" }}
+                    transition={{ duration: reduce ? 0 : 1.1, ease: EASE }}
+                />
                 {experiences.map((experience, i) => {
                     // The current role (period "Present") is the highlighted, gold card.
                     const isPresent = i === 0;
                     return (
-                        <li key={`${experience.organization}-${i}`} className="relative pl-8 sm:pl-10">
+                        <li
+                            key={`${experience.organization}-${i}`}
+                            className={cn("relative pl-8 sm:pl-10", i > 0 && "mt-5")}
+                        >
                             <span
                                 aria-hidden
                                 className={cn(
                                     "absolute left-0 top-2 flex h-[15px] w-[15px] items-center justify-center rounded-full border-2 border-brand-paper bg-gradient-to-br shadow-soft sm:h-[19px] sm:w-[19px]",
                                     isPresent
-                                        ? "from-brand-accent to-brand-accent-dark"
+                                        ? "from-brand-accent to-brand-accent-dark ring-2 ring-brand-accent/50 ring-offset-1 ring-offset-brand-paper"
                                         : "from-brand-primary to-brand-primary-dark",
                                 )}
                             />
@@ -54,7 +73,8 @@ export default function Experience() {
                                             {experience.role}
                                         </h3>
                                         {isPresent ? (
-                                            <span className="inline-flex items-center rounded-full border border-brand-night/20 bg-brand-night/10 px-2.5 py-1 text-xs font-semibold text-brand-night">
+                                            <span className="inline-flex items-center gap-1.5 rounded-full border border-brand-night/25 bg-brand-night/10 px-2.5 py-1 text-xs font-semibold text-brand-night">
+                                                <span className="h-1.5 w-1.5 rounded-full bg-brand-night" />
                                                 {experience.period}
                                             </span>
                                         ) : (

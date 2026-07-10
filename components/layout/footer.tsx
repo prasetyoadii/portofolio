@@ -2,19 +2,28 @@ import Link from "next/link";
 import { navLinks, profile } from "@/content/portfolio";
 import { Container } from "@/components/ui/container";
 import { SocialLinks } from "@/components/ui/social-links";
+import { Waveform } from "@/components/ui/waveform";
 
 export default function Footer() {
     return (
         <Container as="footer" className="mt-10 pb-12">
-            <div className="flex flex-col items-center gap-8 border-t border-[color:var(--line)] pt-8 sm:flex-row sm:items-start sm:justify-between">
+            {/* Gradient hairline — a softer edge than a flat full-width rule. */}
+            <div
+                aria-hidden
+                className="h-px w-full bg-gradient-to-r from-transparent via-[color:var(--line)] to-transparent"
+            />
+            <div className="flex flex-col items-center gap-8 pt-8 sm:flex-row sm:items-start sm:justify-between">
                 <div className="text-center sm:text-left">
-                    <Link href="#home" className="font-display text-lg font-bold text-brand-ink">
+                    <Link
+                        href="#home"
+                        className="inline-flex items-center gap-2 font-display text-lg font-bold text-brand-ink"
+                    >
                         {profile.shortName}
-                        <span className="text-brand-primary">.</span>
+                        <span className="text-brand-accent">.</span>
+                        <Waveform size="sm" tone="accent" />
                     </Link>
                     <p className="mt-2 max-w-xs text-sm text-brand-muted">
-                        {profile.role} · {profile.location}. Open to opportunities and good
-                        conversations.
+                        {profile.role} · {profile.location}. Open to opportunities.
                     </p>
                 </div>
 
@@ -23,7 +32,7 @@ export default function Footer() {
                         <Link
                             key={link.hash}
                             href={link.hash}
-                            className="text-sm text-brand-muted transition-colors hover:text-brand-ink"
+                            className="text-sm text-brand-muted underline-offset-4 transition-colors hover:text-brand-ink hover:underline hover:decoration-brand-accent/60"
                         >
                             {link.name}
                         </Link>

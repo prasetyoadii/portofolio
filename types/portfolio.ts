@@ -18,7 +18,7 @@ export interface Profile {
     role: string;
     location: string;
     headline: string;
-    subheadline: string;
+    // subheadline: string;
     about: string[];
     email: string;
     avatar: StaticImageData;
@@ -43,6 +43,7 @@ export interface Project {
     imageUrl?: StaticImageData[];
     github?: string;
     demo?: string;
+    videoUrl?: string;
     featured?: boolean;
 }
 

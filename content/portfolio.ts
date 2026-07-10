@@ -78,12 +78,9 @@ export const profile: Profile = {
     shortName: "Adi",
     role: "Fullstack Developer",
     location: "Universitas Indonesia · Fasilkom",
-    headline: "Building accessible, reliable, and human-centered software.",
-    subheadline:
-        "Computer Science student at Universitas Indonesia and a fullstack developer working across backend, frontend, and mobile.",
+    headline: "Final-year Computer Science student with hands-on professional experience building full-stack systems, including enterprise applications and AI-integrated mobile applications",
     about: [
-        "I'm a Computer Science student at Universitas Indonesia who turns real-world problems into clean, scalable software. I work across the full stack — from APIs and data models on the backend to the web and mobile interfaces on top.",
-        "I built TuwaCare, a gerontechnology platform pairing a Flutter app with a FastAPI backend, background automation, and an AI voice assistant — so older adults and caregivers get help that feels human.",
+        "Comfortable working across multiple stacks and experienced in end-to-end development, from design to deployment and CI/CD.Seeking a full-stack or backend engineering role where I can apply this experience to build reliable, production-ready systems"
     ],
     email: "adidudadi02@gmail.com",
     avatar: myPhoto,
@@ -94,7 +91,7 @@ export const socials: SocialLink[] = [
     { name: "GitHub", href: "https://github.com/prasetyoadii", icon: FaGithub },
     {
         name: "LinkedIn",
-        href: "https://www.linkedin.com/in/prasetyo-adi-548454242/",
+        href: "https://www.linkedin.com/in/prasetyo-adi-wijonarko/",
         icon: FaLinkedin,
     },
     { name: "Medium", href: "https://medium.com/@prasetyowijanarko6", icon: FaMedium },
@@ -104,13 +101,14 @@ export const socials: SocialLink[] = [
 // --- Experience ---------------------------------------------------------------
 export const experiences: Experience[] = [
     {
-        role: "Fullstack Developer",
-        organization: "MSI",
-        period: "Present",
+        role: "Fullstack Developer Intern",
+        organization: "Magna Solusi Indonesia",
+        period: "Aug 2025 - Mar 2026",
         points: [
-            "Build features across the frontend and backend stack.",
-            "Integrate REST APIs into production workflows.",
-            "Write clean, maintainable code that scales with the product.",
+            "Developed an e-procurement system, a school management system, and an HRIS (Human Resource Information System) using .NET, Angular, Java, and PostgreSQL.",
+            "Developed master data module for an e-procurement system using .NET and Angular.",
+            "Refactored and fixed existing code in a school management system using Java and Angular.",
+            "Developed HRIS (Human Resource Information System) using Java and Angular."
         ],
     },
     {
@@ -118,8 +116,8 @@ export const experiences: Experience[] = [
         organization: "Dulang Smart Warehouse",
         period: "Feb 2025 – Jun 2025",
         points: [
-            "Shipped a smart-warehouse mobile app for a real client.",
-            "Built inventory management with real-time stock sync.",
+            "Developed a mobile inventory system application for an e-commerce company (Dulang) to manage and monitor stocks of items intended for sale.",
+            "Built the backend using Django REST Framework and the frontend with Flutter",
         ],
     },
     {
@@ -136,28 +134,32 @@ export const experiences: Experience[] = [
 // --- Projects -----------------------------------------------------------------
 export const projects: Project[] = [
     {
-        title: "TuwaCare",
+        title: "SeniorCare",
         type: "Mobile",
         tagline: "Gerontechnology platform for older adults & caregivers",
         description:
-            "An end-to-end care platform that helps older adults and their caregivers manage daily life — reminders, health notes, SOS alerts, cognitive games, and a hands-free AI voice assistant — all in one accessible app.",
+            "Built a gerontechnology mobile application to support caregivers and elderly users in daily activities, featuring scheduling, elderly condition logging, data export, light games, and a community forum.",
         highlights: [
             "Schedule & reminder automation with push notifications",
-            "Health notes, daily records, and caregiver monitoring",
-            "SOS emergency alerts and a community support forum",
-            "AI voice assistant: Speech-to-Text → LLM function calling → tools → Text-to-Speech",
+            "Health logging and caregiver monitoring dashboard",
+            "SOS emergency alerts and community forum",
+            "AI voice assistant: STT → LLM function calling → TTS",
+            "Layered & clean architecture for maintainability",
+            "CI/CD pipeline with GitLab CI, Docker, and VPS deployment",
         ],
         tags: [
-            "Flutter",
             "FastAPI",
+            "Flutter",
             "PostgreSQL",
             "Redis",
             "Celery",
             "FCM",
             "Google OAuth",
-            "LLM",
+            "AI Voice Assistant",
+            "Docker",
         ],
         featured: true,
+        videoUrl: "https://www.youtube.com/watch?v=Hk-NmEhTSo8",
     },
     {
         title: "Dulang Smartwarehouse App",

@@ -1,0 +1,307 @@
+{
+  "C:\\Users\\Prasetyo Adi\\OneDrive\\Dokumen\\My-Project\\next-js-project\\portofolio\\app\\layout.tsx": {
+    "mtime": 1782155846.4999473,
+    "ast_hash": "5bddd20c3b474d73a779b66857d4e21b",
+    "semantic_hash": "5bddd20c3b474d73a779b66857d4e21b"
+  },
+  "C:\\Users\\Prasetyo Adi\\OneDrive\\Dokumen\\My-Project\\next-js-project\\portofolio\\app\\opengraph-image.tsx": {
+    "mtime": 1782040305.5214322,
+    "ast_hash": "9c03f97416cd6b9ef64c030ed26f9871",
+    "semantic_hash": "9c03f97416cd6b9ef64c030ed26f9871"
+  },
+  "C:\\Users\\Prasetyo Adi\\OneDrive\\Dokumen\\My-Project\\next-js-project\\portofolio\\app\\page.tsx": {
+    "mtime": 1782024723.481661,
+    "ast_hash": "d39546b36be85604541e91686d1db7e2",
+    "semantic_hash": "d39546b36be85604541e91686d1db7e2"
+  },
+  "C:\\Users\\Prasetyo Adi\\OneDrive\\Dokumen\\My-Project\\next-js-project\\portofolio\\app\\robots.ts": {
+    "mtime": 1782040100.6936302,
+    "ast_hash": "d6ce0d1c15615be52365e405109a6d14",
+    "semantic_hash": "d6ce0d1c15615be52365e405109a6d14"
+  },
+  "C:\\Users\\Prasetyo Adi\\OneDrive\\Dokumen\\My-Project\\next-js-project\\portofolio\\app\\sitemap.ts": {
+    "mtime": 1782040107.2394092,
+    "ast_hash": "da3d8a92a071a12d7ee35ed4a23c9ff6",
+    "semantic_hash": "da3d8a92a071a12d7ee35ed4a23c9ff6"
+  },
+  "C:\\Users\\Prasetyo Adi\\OneDrive\\Dokumen\\My-Project\\next-js-project\\portofolio\\components\\layout\\footer.tsx": {
+    "mtime": 1782155908.6184676,
+    "ast_hash": "456495d4384c8658bd471fea991727b7",
+    "semantic_hash": "456495d4384c8658bd471fea991727b7"
+  },
+  "C:\\Users\\Prasetyo Adi\\OneDrive\\Dokumen\\My-Project\\next-js-project\\portofolio\\components\\layout\\header.tsx": {
+    "mtime": 1782036874.3265007,
+    "ast_hash": "1c02ed2455d5b0999e0bbb1b778c311c",
+    "semantic_hash": "1c02ed2455d5b0999e0bbb1b778c311c"
+  },
+  "C:\\Users\\Prasetyo Adi\\OneDrive\\Dokumen\\My-Project\\next-js-project\\portofolio\\components\\project\\project-card.tsx": {
+    "mtime": 1782155903.98697,
+    "ast_hash": "e606160248927802edccb92818ff6a0e",
+    "semantic_hash": "e606160248927802edccb92818ff6a0e"
+  },
+  "C:\\Users\\Prasetyo Adi\\OneDrive\\Dokumen\\My-Project\\next-js-project\\portofolio\\components\\project\\project-modal.tsx": {
+    "mtime": 1782027411.511841,
+    "ast_hash": "4b5819ad13a4ba306964be2144aa34a5",
+    "semantic_hash": "4b5819ad13a4ba306964be2144aa34a5"
+  },
+  "C:\\Users\\Prasetyo Adi\\OneDrive\\Dokumen\\My-Project\\next-js-project\\portofolio\\components\\sections\\about.tsx": {
+    "mtime": 1782155899.4372964,
+    "ast_hash": "8487c788774e9a7824ca40d6eb5a6d7c",
+    "semantic_hash": "8487c788774e9a7824ca40d6eb5a6d7c"
+  },
+  "C:\\Users\\Prasetyo Adi\\OneDrive\\Dokumen\\My-Project\\next-js-project\\portofolio\\components\\sections\\articles.tsx": {
+    "mtime": 1782155035.2333274,
+    "ast_hash": "7721f559e58ae4005d82c1dca3f546c7",
+    "semantic_hash": "7721f559e58ae4005d82c1dca3f546c7"
+  },
+  "C:\\Users\\Prasetyo Adi\\OneDrive\\Dokumen\\My-Project\\next-js-project\\portofolio\\components\\sections\\contact.tsx": {
+    "mtime": 1782154896.7589695,
+    "ast_hash": "7341654350e02f50209915f8736b0cae",
+    "semantic_hash": "7341654350e02f50209915f8736b0cae"
+  },
+  "C:\\Users\\Prasetyo Adi\\OneDrive\\Dokumen\\My-Project\\next-js-project\\portofolio\\components\\sections\\experience.tsx": {
+    "mtime": 1782156995.7226434,
+    "ast_hash": "c2fd6d14146b5591c31d25a553baad5c",
+    "semantic_hash": "c2fd6d14146b5591c31d25a553baad5c"
+  },
+  "C:\\Users\\Prasetyo Adi\\OneDrive\\Dokumen\\My-Project\\next-js-project\\portofolio\\components\\sections\\hero.tsx": {
+    "mtime": 1782157000.4044216,
+    "ast_hash": "527e140689207bbee1421b7ff5215fb4",
+    "semantic_hash": "527e140689207bbee1421b7ff5215fb4"
+  },
+  "C:\\Users\\Prasetyo Adi\\OneDrive\\Dokumen\\My-Project\\next-js-project\\portofolio\\components\\sections\\projects.tsx": {
+    "mtime": 1782154748.0646884,
+    "ast_hash": "3f07bc4c7243edddb933dac887856630",
+    "semantic_hash": "3f07bc4c7243edddb933dac887856630"
+  },
+  "C:\\Users\\Prasetyo Adi\\OneDrive\\Dokumen\\My-Project\\next-js-project\\portofolio\\components\\sections\\skills.tsx": {
+    "mtime": 1782154641.7639275,
+    "ast_hash": "6419deddffb791b1b2c7d3450418d872",
+    "semantic_hash": "6419deddffb791b1b2c7d3450418d872"
+  },
+  "C:\\Users\\Prasetyo Adi\\OneDrive\\Dokumen\\My-Project\\next-js-project\\portofolio\\components\\seo\\json-ld.tsx": {
+    "mtime": 1782040094.849799,
+    "ast_hash": "0bc52f33f302ef16fd2eb4050a5ae9c5",
+    "semantic_hash": "0bc52f33f302ef16fd2eb4050a5ae9c5"
+  },
+  "C:\\Users\\Prasetyo Adi\\OneDrive\\Dokumen\\My-Project\\next-js-project\\portofolio\\components\\ui\\badge.tsx": {
+    "mtime": 1782028879.5325696,
+    "ast_hash": "535adc2a73889ab087dc079df95c6684",
+    "semantic_hash": "535adc2a73889ab087dc079df95c6684"
+  },
+  "C:\\Users\\Prasetyo Adi\\OneDrive\\Dokumen\\My-Project\\next-js-project\\portofolio\\components\\ui\\button.tsx": {
+    "mtime": 1782024702.5571702,
+    "ast_hash": "57d09847c0a54e6fef57151950c25e10",
+    "semantic_hash": "57d09847c0a54e6fef57151950c25e10"
+  },
+  "C:\\Users\\Prasetyo Adi\\OneDrive\\Dokumen\\My-Project\\next-js-project\\portofolio\\components\\ui\\card.tsx": {
+    "mtime": 1782154356.370469,
+    "ast_hash": "09d28cf1e1e5d294a2ad0b5b26048e10",
+    "semantic_hash": "09d28cf1e1e5d294a2ad0b5b26048e10"
+  },
+  "C:\\Users\\Prasetyo Adi\\OneDrive\\Dokumen\\My-Project\\next-js-project\\portofolio\\components\\ui\\container.tsx": {
+    "mtime": 1781980774.1787484,
+    "ast_hash": "ff71d7acd3b08ab3ec31e178203f1b02",
+    "semantic_hash": "ff71d7acd3b08ab3ec31e178203f1b02"
+  },
+  "C:\\Users\\Prasetyo Adi\\OneDrive\\Dokumen\\My-Project\\next-js-project\\portofolio\\components\\ui\\notification.tsx": {
+    "mtime": 1781976109.8800454,
+    "ast_hash": "126341ce5c3fa8879952c6a1d2206113",
+    "semantic_hash": "126341ce5c3fa8879952c6a1d2206113"
+  },
+  "C:\\Users\\Prasetyo Adi\\OneDrive\\Dokumen\\My-Project\\next-js-project\\portofolio\\components\\ui\\reveal.tsx": {
+    "mtime": 1782036930.100051,
+    "ast_hash": "4d74c0797b349f349e6ccff51e235441",
+    "semantic_hash": "4d74c0797b349f349e6ccff51e235441"
+  },
+  "C:\\Users\\Prasetyo Adi\\OneDrive\\Dokumen\\My-Project\\next-js-project\\portofolio\\components\\ui\\section-header.tsx": {
+    "mtime": 1782155888.4388664,
+    "ast_hash": "28f5a37ccfbdd117bb6d3aad056f330b",
+    "semantic_hash": "28f5a37ccfbdd117bb6d3aad056f330b"
+  },
+  "C:\\Users\\Prasetyo Adi\\OneDrive\\Dokumen\\My-Project\\next-js-project\\portofolio\\components\\ui\\social-links.tsx": {
+    "mtime": 1782024716.262277,
+    "ast_hash": "7f5d334eb42a9a29b877000288c2fd25",
+    "semantic_hash": "7f5d334eb42a9a29b877000288c2fd25"
+  },
+  "C:\\Users\\Prasetyo Adi\\OneDrive\\Dokumen\\My-Project\\next-js-project\\portofolio\\components\\ui\\waveform.tsx": {
+    "mtime": 1782155870.71043,
+    "ast_hash": "b88a3a967956a4d8aabe88c330fc5c96",
+    "semantic_hash": "b88a3a967956a4d8aabe88c330fc5c96"
+  },
+  "C:\\Users\\Prasetyo Adi\\OneDrive\\Dokumen\\My-Project\\next-js-project\\portofolio\\content\\portfolio.ts": {
+    "mtime": 1782040049.717539,
+    "ast_hash": "979bb212a7b8180751c3611748278d16",
+    "semantic_hash": "979bb212a7b8180751c3611748278d16"
+  },
+  "C:\\Users\\Prasetyo Adi\\OneDrive\\Dokumen\\My-Project\\next-js-project\\portofolio\\context\\active-section-context.tsx": {
+    "mtime": 1781975730.5359764,
+    "ast_hash": "2112026c1738f43c346d4be725b67bc4",
+    "semantic_hash": "2112026c1738f43c346d4be725b67bc4"
+  },
+  "C:\\Users\\Prasetyo Adi\\OneDrive\\Dokumen\\My-Project\\next-js-project\\portofolio\\email\\contact-form-email.tsx": {
+    "mtime": 1751447123.9460404,
+    "ast_hash": "1b684ee9b2ec4f6e6b3adf4f531a74af",
+    "semantic_hash": "1b684ee9b2ec4f6e6b3adf4f531a74af"
+  },
+  "C:\\Users\\Prasetyo Adi\\OneDrive\\Dokumen\\My-Project\\next-js-project\\portofolio\\eslint.config.mjs": {
+    "mtime": 1751105166.8479774,
+    "ast_hash": "b43f470c5df5e9ff4c2f5e0bd917a881",
+    "semantic_hash": "b43f470c5df5e9ff4c2f5e0bd917a881"
+  },
+  "C:\\Users\\Prasetyo Adi\\OneDrive\\Dokumen\\My-Project\\next-js-project\\portofolio\\lib\\actions.ts": {
+    "mtime": 1781983951.390458,
+    "ast_hash": "6babd2da945844334bdaf4cba41b6e79",
+    "semantic_hash": "6babd2da945844334bdaf4cba41b6e79"
+  },
+  "C:\\Users\\Prasetyo Adi\\OneDrive\\Dokumen\\My-Project\\next-js-project\\portofolio\\lib\\animation.ts": {
+    "mtime": 1781976237.8806674,
+    "ast_hash": "d6ce3a61eb772650ecd69895a744b7f7",
+    "semantic_hash": "d6ce3a61eb772650ecd69895a744b7f7"
+  },
+  "C:\\Users\\Prasetyo Adi\\OneDrive\\Dokumen\\My-Project\\next-js-project\\portofolio\\lib\\cn.ts": {
+    "mtime": 1781975707.1394198,
+    "ast_hash": "78a0ea6011e7d17a0c388e4e8fc4eb99",
+    "semantic_hash": "78a0ea6011e7d17a0c388e4e8fc4eb99"
+  },
+  "C:\\Users\\Prasetyo Adi\\OneDrive\\Dokumen\\My-Project\\next-js-project\\portofolio\\lib\\hooks.ts": {
+    "mtime": 1781975726.5809648,
+    "ast_hash": "119273126fb4a3f5faca3c2a13df73c4",
+    "semantic_hash": "119273126fb4a3f5faca3c2a13df73c4"
+  },
+  "C:\\Users\\Prasetyo Adi\\OneDrive\\Dokumen\\My-Project\\next-js-project\\portofolio\\lib\\utils.ts": {
+    "mtime": 1751447140.9660375,
+    "ast_hash": "f5a0950efefbaed6cc2463865ae215b0",
+    "semantic_hash": "f5a0950efefbaed6cc2463865ae215b0"
+  },
+  "C:\\Users\\Prasetyo Adi\\OneDrive\\Dokumen\\My-Project\\next-js-project\\portofolio\\next.config.ts": {
+    "mtime": 1751105166.930996,
+    "ast_hash": "9b77af189a21a7a64e4bd7a426f64176",
+    "semantic_hash": "9b77af189a21a7a64e4bd7a426f64176"
+  },
+  "C:\\Users\\Prasetyo Adi\\OneDrive\\Dokumen\\My-Project\\next-js-project\\portofolio\\package.json": {
+    "mtime": 1752075160.0618584,
+    "ast_hash": "bbb4ae9ffc2984c11c902195795e3127",
+    "semantic_hash": "bbb4ae9ffc2984c11c902195795e3127"
+  },
+  "C:\\Users\\Prasetyo Adi\\OneDrive\\Dokumen\\My-Project\\next-js-project\\portofolio\\postcss.config.mjs": {
+    "mtime": 1751187504.8118405,
+    "ast_hash": "70dd2633f6a66677a2eca609788c70dd",
+    "semantic_hash": "70dd2633f6a66677a2eca609788c70dd"
+  },
+  "C:\\Users\\Prasetyo Adi\\OneDrive\\Dokumen\\My-Project\\next-js-project\\portofolio\\tailwind.config.ts": {
+    "mtime": 1782156505.6766613,
+    "ast_hash": "84d4936b62b44109ade3b44eda2aec6b",
+    "semantic_hash": "84d4936b62b44109ade3b44eda2aec6b"
+  },
+  "C:\\Users\\Prasetyo Adi\\OneDrive\\Dokumen\\My-Project\\next-js-project\\portofolio\\tsconfig.json": {
+    "mtime": 1782156978.5299454,
+    "ast_hash": "50eefc52c7df94f3e2a223bea0eec358",
+    "semantic_hash": "50eefc52c7df94f3e2a223bea0eec358"
+  },
+  "C:\\Users\\Prasetyo Adi\\OneDrive\\Dokumen\\My-Project\\next-js-project\\portofolio\\types\\portfolio.ts": {
+    "mtime": 1781975649.7469666,
+    "ast_hash": "a167bd7bd6adf3b71dac046e546a1eb8",
+    "semantic_hash": "a167bd7bd6adf3b71dac046e546a1eb8"
+  },
+  "C:\\Users\\Prasetyo Adi\\OneDrive\\Dokumen\\My-Project\\next-js-project\\portofolio\\CLAUDE.md": {
+    "mtime": 1781975036.4783504,
+    "ast_hash": "97491187661ab9b5ed35eeb54f3cb6eb",
+    "semantic_hash": "97491187661ab9b5ed35eeb54f3cb6eb"
+  },
+  "C:\\Users\\Prasetyo Adi\\OneDrive\\Dokumen\\My-Project\\next-js-project\\portofolio\\README.md": {
+    "mtime": 1751105166.8298018,
+    "ast_hash": "f15aaa42d5d299d091b1171097ea56ad",
+    "semantic_hash": "f15aaa42d5d299d091b1171097ea56ad"
+  },
+  "C:\\Users\\Prasetyo Adi\\OneDrive\\Dokumen\\My-Project\\next-js-project\\portofolio\\app\\icon.svg": {
+    "mtime": 1782156307.5868158,
+    "ast_hash": "77f945a117a7aff78454c716065e89c4",
+    "semantic_hash": "77f945a117a7aff78454c716065e89c4"
+  },
+  "C:\\Users\\Prasetyo Adi\\OneDrive\\Dokumen\\My-Project\\next-js-project\\portofolio\\public\\best-practice.png": {
+    "mtime": 1751277206.2427597,
+    "ast_hash": "5f217e41a10ca9866ef28fc2955c9952",
+    "semantic_hash": "5f217e41a10ca9866ef28fc2955c9952"
+  },
+  "C:\\Users\\Prasetyo Adi\\OneDrive\\Dokumen\\My-Project\\next-js-project\\portofolio\\public\\dulang-product.png": {
+    "mtime": 1752078837.34284,
+    "ast_hash": "a46bede957c75755b16113ffd752e411",
+    "semantic_hash": "a46bede957c75755b16113ffd752e411"
+  },
+  "C:\\Users\\Prasetyo Adi\\OneDrive\\Dokumen\\My-Project\\next-js-project\\portofolio\\public\\dulang-verify.png": {
+    "mtime": 1752078848.2873747,
+    "ast_hash": "467ad42f8ce669cb515d79ca20b5a869",
+    "semantic_hash": "467ad42f8ce669cb515d79ca20b5a869"
+  },
+  "C:\\Users\\Prasetyo Adi\\OneDrive\\Dokumen\\My-Project\\next-js-project\\portofolio\\public\\dulang.png": {
+    "mtime": 1751273128.3357363,
+    "ast_hash": "e96c111c7d5c086a582e11866175e0a9",
+    "semantic_hash": "e96c111c7d5c086a582e11866175e0a9"
+  },
+  "C:\\Users\\Prasetyo Adi\\OneDrive\\Dokumen\\My-Project\\next-js-project\\portofolio\\public\\heuristic-eval.png": {
+    "mtime": 1751277168.8327813,
+    "ast_hash": "aa5517378ee01342c7d27d00c09f690a",
+    "semantic_hash": "aa5517378ee01342c7d27d00c09f690a"
+  },
+  "C:\\Users\\Prasetyo Adi\\OneDrive\\Dokumen\\My-Project\\next-js-project\\portofolio\\public\\manage-human.png": {
+    "mtime": 1751277424.9856627,
+    "ast_hash": "5510c9785508e91b4b76dd2b8edf301b",
+    "semantic_hash": "5510c9785508e91b4b76dd2b8edf301b"
+  },
+  "C:\\Users\\Prasetyo Adi\\OneDrive\\Dokumen\\My-Project\\next-js-project\\portofolio\\public\\medium-clone.png": {
+    "mtime": 1751191536.5398314,
+    "ast_hash": "76fcac6695094530ee2a4cdb0c5e43f4",
+    "semantic_hash": "76fcac6695094530ee2a4cdb0c5e43f4"
+  },
+  "C:\\Users\\Prasetyo Adi\\OneDrive\\Dokumen\\My-Project\\next-js-project\\portofolio\\public\\monitoring.png": {
+    "mtime": 1751277447.3942432,
+    "ast_hash": "15e79abb2a302e33cc264dea08380789",
+    "semantic_hash": "15e79abb2a302e33cc264dea08380789"
+  },
+  "C:\\Users\\Prasetyo Adi\\OneDrive\\Dokumen\\My-Project\\next-js-project\\portofolio\\public\\my-photo.jpg": {
+    "mtime": 1751197778.8231492,
+    "ast_hash": "a413e9e61bc4991593ace421be0b384c",
+    "semantic_hash": "a413e9e61bc4991593ace421be0b384c"
+  },
+  "C:\\Users\\Prasetyo Adi\\OneDrive\\Dokumen\\My-Project\\next-js-project\\portofolio\\public\\quality-assurance.png": {
+    "mtime": 1751277341.8585656,
+    "ast_hash": "8fcb58fe311fa78f7dd16a9b2bae63d2",
+    "semantic_hash": "8fcb58fe311fa78f7dd16a9b2bae63d2"
+  },
+  "C:\\Users\\Prasetyo Adi\\OneDrive\\Dokumen\\My-Project\\next-js-project\\portofolio\\public\\reusabe-component.png": {
+    "mtime": 1751277313.7017698,
+    "ast_hash": "f29c84b35bccbf87a6862bfd64903d5c",
+    "semantic_hash": "f29c84b35bccbf87a6862bfd64903d5c"
+  },
+  "C:\\Users\\Prasetyo Adi\\OneDrive\\Dokumen\\My-Project\\next-js-project\\portofolio\\public\\secure-programming.png": {
+    "mtime": 1751277375.9909818,
+    "ast_hash": "d4d5d313058877e459bc0b33bf789549",
+    "semantic_hash": "d4d5d313058877e459bc0b33bf789549"
+  },
+  "C:\\Users\\Prasetyo Adi\\OneDrive\\Dokumen\\My-Project\\next-js-project\\portofolio\\public\\snackventure.png": {
+    "mtime": 1751191520.745922,
+    "ast_hash": "c71c6723cca13ee435fb8acc6b99fd57",
+    "semantic_hash": "c71c6723cca13ee435fb8acc6b99fd57"
+  },
+  "C:\\Users\\Prasetyo Adi\\OneDrive\\Dokumen\\My-Project\\next-js-project\\portofolio\\public\\snapmosphere.png": {
+    "mtime": 1751273098.6249473,
+    "ast_hash": "ba83dccb9bcf730b0dd50ffbf863040f",
+    "semantic_hash": "ba83dccb9bcf730b0dd50ffbf863040f"
+  },
+  "C:\\Users\\Prasetyo Adi\\OneDrive\\Dokumen\\My-Project\\next-js-project\\portofolio\\public\\stub-mock.png": {
+    "mtime": 1751277279.989359,
+    "ast_hash": "e921ae94884af84e92b597b1f27ae940",
+    "semantic_hash": "e921ae94884af84e92b597b1f27ae940"
+  },
+  "C:\\Users\\Prasetyo Adi\\OneDrive\\Dokumen\\My-Project\\next-js-project\\portofolio\\public\\tdd.png": {
+    "mtime": 1751277246.6947598,
+    "ast_hash": "29bda0bfeaa8d98a1da9840047b2e2b6",
+    "semantic_hash": "29bda0bfeaa8d98a1da9840047b2e2b6"
+  },
+  "C:\\Users\\Prasetyo Adi\\OneDrive\\Dokumen\\My-Project\\next-js-project\\portofolio\\public\\teamwork-tools.png": {
+    "mtime": 1751277399.9705625,
+    "ast_hash": "6c6ade9dff06d2cbb9962e47c3f43039",
+    "semantic_hash": "6c6ade9dff06d2cbb9962e47c3f43039"
+  }
+}

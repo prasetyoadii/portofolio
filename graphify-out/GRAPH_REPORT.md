@@ -1,193 +1,218 @@
-# Graph Report - .  (2026-06-20)
+# Graph Report - .  (2026-06-23)
 
 ## Corpus Check
-- 46 files · ~90,411 words
+- 61 files · ~95,850 words
 - Verdict: corpus is large enough that graph structure adds value.
 
 ## Summary
-- 221 nodes · 265 edges · 31 communities (25 shown, 6 thin omitted)
-- Extraction: 97% EXTRACTED · 0% INFERRED · 0% AMBIGUOUS · INFERRED: 1 edges (avg confidence: 0.95)
+- 314 nodes · 512 edges · 97 communities (12 shown, 85 thin omitted)
+- Extraction: 94% EXTRACTED · 6% INFERRED · 0% AMBIGUOUS · INFERRED: 31 edges (avg confidence: 0.87)
 - Token cost: 0 input · 0 output
 
 ## Community Hubs (Navigation)
-- [[_COMMUNITY_Portfolio UI Components|Portfolio UI Components]]
-- [[_COMMUNITY_Runtime Dependencies|Runtime Dependencies]]
+- [[_COMMUNITY_App Layout & Metadata|App Layout & Metadata]]
+- [[_COMMUNITY_Content Data & UI Utils|Content Data & UI Utils]]
+- [[_COMMUNITY_Page Composition & Animation|Page Composition & Animation]]
+- [[_COMMUNITY_Build & Package Config|Build & Package Config]]
 - [[_COMMUNITY_TypeScript Config|TypeScript Config]]
-- [[_COMMUNITY_Dev Build Tools|Dev Build Tools]]
-- [[_COMMUNITY_Contact & Email API|Contact & Email API]]
-- [[_COMMUNITY_Project Showcase Components|Project Showcase Components]]
-- [[_COMMUNITY_Best Practice Articles|Best Practice Articles]]
-- [[_COMMUNITY_Dulang Warehouse App|Dulang Warehouse App]]
-- [[_COMMUNITY_Next.js Project Setup|Next.js Project Setup]]
-- [[_COMMUNITY_Dulang Verify Feature|Dulang Verify Feature]]
-- [[_COMMUNITY_App Layout & Footer|App Layout & Footer]]
-- [[_COMMUNITY_Snapmosphere Weather App|Snapmosphere Weather App]]
-- [[_COMMUNITY_ESLint Configuration|ESLint Configuration]]
-- [[_COMMUNITY_Dulang Products Screen|Dulang Products Screen]]
-- [[_COMMUNITY_Heuristic Evaluation|Heuristic Evaluation]]
-- [[_COMMUNITY_Flutter Security Article|Flutter Security Article]]
-- [[_COMMUNITY_Teamwork & Productivity|Teamwork & Productivity]]
-- [[_COMMUNITY_Human Team Management|Human Team Management]]
-- [[_COMMUNITY_Medium Clone UI|Medium Clone UI]]
-- [[_COMMUNITY_Quality Assurance|Quality Assurance]]
-- [[_COMMUNITY_Test-Driven Development|Test-Driven Development]]
-- [[_COMMUNITY_Email Contact Template|Email Contact Template]]
-- [[_COMMUNITY_Project Monitoring|Project Monitoring]]
-- [[_COMMUNITY_Reusable UI Components|Reusable UI Components]]
-- [[_COMMUNITY_Snackventure App|Snackventure App]]
-- [[_COMMUNITY_Flutter Unit Testing|Flutter Unit Testing]]
+- [[_COMMUNITY_Section Components|Section Components]]
+- [[_COMMUNITY_Architecture Concepts|Architecture Concepts]]
+- [[_COMMUNITY_Runtime Dependencies|Runtime Dependencies]]
+- [[_COMMUNITY_Server Actions & Email|Server Actions & Email]]
+- [[_COMMUNITY_Project Documentation|Project Documentation]]
+- [[_COMMUNITY_ESLint Config|ESLint Config]]
+- [[_COMMUNITY_Active Section Context|Active Section Context]]
+- [[_COMMUNITY_Contact Email Template|Contact Email Template]]
 - [[_COMMUNITY_Next.js Config|Next.js Config]]
 - [[_COMMUNITY_PostCSS Config|PostCSS Config]]
-- [[_COMMUNITY_Tailwind Config|Tailwind Config]]
-- [[_COMMUNITY_Profile Photo|Profile Photo]]
+- [[_COMMUNITY_Module 15|Module 15]]
+- [[_COMMUNITY_Module 16|Module 16]]
+- [[_COMMUNITY_Module 17|Module 17]]
+- [[_COMMUNITY_Module 18|Module 18]]
+- [[_COMMUNITY_Module 19|Module 19]]
+- [[_COMMUNITY_Module 20|Module 20]]
+- [[_COMMUNITY_Module 21|Module 21]]
+- [[_COMMUNITY_Module 22|Module 22]]
+- [[_COMMUNITY_Module 23|Module 23]]
+- [[_COMMUNITY_Module 24|Module 24]]
+- [[_COMMUNITY_Module 25|Module 25]]
+- [[_COMMUNITY_Module 26|Module 26]]
+- [[_COMMUNITY_Module 27|Module 27]]
+- [[_COMMUNITY_Module 28|Module 28]]
+- [[_COMMUNITY_Module 29|Module 29]]
+- [[_COMMUNITY_Module 30|Module 30]]
+- [[_COMMUNITY_Module 31|Module 31]]
+- [[_COMMUNITY_Module 32|Module 32]]
+- [[_COMMUNITY_Module 33|Module 33]]
+- [[_COMMUNITY_Module 34|Module 34]]
+- [[_COMMUNITY_Module 35|Module 35]]
+- [[_COMMUNITY_Module 36|Module 36]]
+- [[_COMMUNITY_Module 37|Module 37]]
+- [[_COMMUNITY_Module 38|Module 38]]
+- [[_COMMUNITY_Module 39|Module 39]]
+- [[_COMMUNITY_Module 40|Module 40]]
+- [[_COMMUNITY_Module 41|Module 41]]
+- [[_COMMUNITY_Module 42|Module 42]]
+- [[_COMMUNITY_Module 43|Module 43]]
+- [[_COMMUNITY_Module 44|Module 44]]
+- [[_COMMUNITY_Module 45|Module 45]]
+- [[_COMMUNITY_Module 46|Module 46]]
+- [[_COMMUNITY_Module 47|Module 47]]
+- [[_COMMUNITY_Module 48|Module 48]]
+- [[_COMMUNITY_Module 49|Module 49]]
+- [[_COMMUNITY_Module 50|Module 50]]
+- [[_COMMUNITY_Module 51|Module 51]]
+- [[_COMMUNITY_Module 52|Module 52]]
+- [[_COMMUNITY_Module 53|Module 53]]
+- [[_COMMUNITY_Module 54|Module 54]]
+- [[_COMMUNITY_Module 55|Module 55]]
+- [[_COMMUNITY_Module 56|Module 56]]
+- [[_COMMUNITY_Module 57|Module 57]]
+- [[_COMMUNITY_Module 58|Module 58]]
+- [[_COMMUNITY_Module 59|Module 59]]
+- [[_COMMUNITY_Module 60|Module 60]]
+- [[_COMMUNITY_Module 61|Module 61]]
+- [[_COMMUNITY_Module 62|Module 62]]
+- [[_COMMUNITY_Module 63|Module 63]]
+- [[_COMMUNITY_Module 64|Module 64]]
+- [[_COMMUNITY_Module 65|Module 65]]
+- [[_COMMUNITY_Module 66|Module 66]]
+- [[_COMMUNITY_Module 67|Module 67]]
+- [[_COMMUNITY_Module 68|Module 68]]
+- [[_COMMUNITY_Module 69|Module 69]]
+- [[_COMMUNITY_Module 70|Module 70]]
+- [[_COMMUNITY_Module 71|Module 71]]
+- [[_COMMUNITY_Module 72|Module 72]]
+- [[_COMMUNITY_Module 73|Module 73]]
+- [[_COMMUNITY_Module 74|Module 74]]
+- [[_COMMUNITY_Module 75|Module 75]]
+- [[_COMMUNITY_Module 76|Module 76]]
+- [[_COMMUNITY_Module 77|Module 77]]
+- [[_COMMUNITY_Module 78|Module 78]]
+- [[_COMMUNITY_Module 79|Module 79]]
+- [[_COMMUNITY_Module 80|Module 80]]
+- [[_COMMUNITY_Module 81|Module 81]]
+- [[_COMMUNITY_Module 82|Module 82]]
+- [[_COMMUNITY_Module 83|Module 83]]
+- [[_COMMUNITY_Module 84|Module 84]]
+- [[_COMMUNITY_Module 85|Module 85]]
+- [[_COMMUNITY_Module 86|Module 86]]
+- [[_COMMUNITY_Module 87|Module 87]]
+- [[_COMMUNITY_Module 88|Module 88]]
+- [[_COMMUNITY_Module 89|Module 89]]
+- [[_COMMUNITY_Module 90|Module 90]]
+- [[_COMMUNITY_Module 91|Module 91]]
+- [[_COMMUNITY_Module 92|Module 92]]
+- [[_COMMUNITY_Module 93|Module 93]]
+- [[_COMMUNITY_Module 94|Module 94]]
+- [[_COMMUNITY_Module 95|Module 95]]
+- [[_COMMUNITY_Module 96|Module 96]]
 
 ## God Nodes (most connected - your core abstractions)
-1. `compilerOptions` - 16 edges
-2. `useSectionInView()` - 14 edges
-3. `useActiveSectionContext()` - 7 edges
-4. `Penerapan Best Practice dalam Pemrograman (Article)` - 7 edges
-5. `scripts` - 6 edges
-6. `Next.js Portfolio Project` - 6 edges
-7. `Onboarding Welcome Screen` - 6 edges
-8. `Programming Principles` - 5 edges
-9. `sendEmail()` - 4 edges
-10. `Products Screen` - 4 edges
+1. `cn()` - 28 edges
+2. `useSectionInView()` - 20 edges
+3. `Reveal()` - 17 edges
+4. `compilerOptions` - 17 edges
+5. `Waveform()` - 15 edges
+6. `Hero()` - 13 edges
+7. `Contact()` - 11 edges
+8. `Experience()` - 11 edges
+9. `EASE` - 11 edges
+10. `Home()` - 10 edges
 
 ## Surprising Connections (you probably didn't know these)
-- `Contact()` --calls--> `useSectionInView()`  [EXTRACTED]
-  components/contact.tsx → lib/hooks.ts
-- `Projects()` --calls--> `useSectionInView()`  [EXTRACTED]
-  components/projects.tsx → lib/hooks.ts
-- `About()` --calls--> `useSectionInView()`  [EXTRACTED]
-  components/about.tsx → lib/hooks.ts
-- `Articles()` --calls--> `useSectionInView()`  [EXTRACTED]
-  components/articles.tsx → lib/hooks.ts
-- `Experiences()` --calls--> `useSectionInView()`  [EXTRACTED]
-  components/experiences.tsx → lib/hooks.ts
+- `Centralized Content in content/portfolio.ts` --references--> `profile`  [INFERRED]
+  CLAUDE.md → content/portfolio.ts
+- `Centralized Content in content/portfolio.ts` --references--> `projects`  [INFERRED]
+  CLAUDE.md → content/portfolio.ts
+- `useSectionInView as Context Bridge Pattern` --references--> `useSectionInView()`  [EXTRACTED]
+  CLAUDE.md → lib/hooks.ts
+- `navLinks` --implements--> `NavLink`  [INFERRED]
+  content/portfolio.ts → types/portfolio.ts
+- `Centralized Content in content/portfolio.ts` --references--> `experiences`  [INFERRED]
+  CLAUDE.md → content/portfolio.ts
 
 ## Import Cycles
 - None detected.
 
 ## Hyperedges (group relationships)
 - **hyperedge_nextjs_font_project** — readme_nextjs_project, readme_next_font, readme_geist_font [EXTRACTED 1.00]
+- **Section + useSectionInView + ActiveSectionContext Pattern** — lib_hooks_usesectioninview, context_activesection, sections_hero_hero, sections_about_about, sections_experience_experience, sections_projects_projects, sections_skills_skills, sections_articles_articles, sections_contact_contact [EXTRACTED 0.95]
+- **Full SEO Coverage: metadata + OG image + JSON-LD + robots + sitemap** — app_layout_metadata, app_opengraph_opengraphimage, seo_jsonld_jsonld, app_robots_robots, app_sitemap_sitemap [INFERRED 0.95]
+- **content/portfolio as Central Data Fan-out to All Sections and SEO** — content_portfolio, app_layout_rootlayout, app_opengraph_opengraphimage, app_robots_robots, app_sitemap_sitemap, layout_footer_footer, layout_header_header, sections_about_about, sections_articles_articles, sections_contact_contact, sections_experience_experience, sections_hero_hero, sections_projects_projects, sections_skills_skills, seo_jsonld_jsonld [EXTRACTED 1.00]
+- **Section In-View Tracking Flow: Hook + Context + SectionName** — lib_hooks_usesectioninview, context_activesection_activesectioncontext, content_portfolio_sectionname [EXTRACTED 1.00]
+- **Contact Form Email Pipeline: Action + Utils + Email Template** — lib_actions_sendemail, lib_utils_validatestring, email_contactformemail_contactformemail [INFERRED 0.85]
+- **Portfolio Content + Type System: content/portfolio.ts + types/portfolio.ts** — content_portfolio_projects, types_portfolio_project, content_portfolio_experiences [EXTRACTED 1.00]
 
-## Communities (31 total, 6 thin omitted)
+## Communities (97 total, 85 thin omitted)
 
-### Community 0 - "Portfolio UI Components"
-Cohesion: 0.12
-Nodes (18): About(), Article(), ArticleProps, Articles(), Experiences(), Header(), Intro(), ActiveSectionContext (+10 more)
-
-### Community 1 - "Runtime Dependencies"
-Cohesion: 0.08
-Nodes (24): dependencies, clsx, framer-motion, lucide-react, next, react, react-dom, @react-email/components (+16 more)
-
-### Community 2 - "TypeScript Config"
+### Community 0 - "App Layout & Metadata"
 Cohesion: 0.10
-Nodes (19): compilerOptions, allowJs, esModuleInterop, incremental, isolatedModules, jsx, lib, module (+11 more)
+Nodes (29): display, metadata, RootLayout(), sans, viewport, size, OpengraphImage, robots() (+21 more)
 
-### Community 3 - "Dev Build Tools"
-Cohesion: 0.14
-Nodes (14): devDependencies, autoprefixer, eslint, eslint-config-next, @eslint/eslintrc, postcss, tailwindcss, @tailwindcss/postcss (+6 more)
+### Community 1 - "Content Data & UI Utils"
+Cohesion: 0.11
+Nodes (25): App Icon SVG, TuwaCare Gerontechnology Project, projects, cn(), ProjectCard(), ProjectCard, Brand Color Palette (Tailwind Config), Sheen Animation (Tailwind Keyframes) (+17 more)
 
-### Community 4 - "Contact & Email API"
-Cohesion: 0.26
-Nodes (7): resend, sendEmail(), Contact(), getErrorMessage(), validateString(), NotificationProps, NotificationType
+### Community 2 - "Page Composition & Animation"
+Cohesion: 0.24
+Nodes (20): Home(), prefers-reduced-motion Accessibility Support, Section Scroll Tracking Pattern, EASE, useSectionInView(), About(), focusAreas, values (+12 more)
 
-### Community 5 - "Project Showcase Components"
-Cohesion: 0.28
-Nodes (4): Project, ProjectCard(), Projects(), projectsData
+### Community 3 - "Build & Package Config"
+Cohesion: 0.08
+Nodes (23): devDependencies, autoprefixer, eslint, eslint-config-next, @eslint/eslintrc, postcss, tailwindcss, @tailwindcss/postcss (+15 more)
 
-### Community 6 - "Best Practice Articles"
-Cohesion: 0.39
-Nodes (8): Penerapan Best Practice dalam Pemrograman (Article), Prasetyo Adi Wijonarko, Best Practice, Medium (Publishing Platform), Object-Oriented Programming (OOP), Programming Principles, Reactive Programming, SOLID Principles
+### Community 4 - "TypeScript Config"
+Cohesion: 0.10
+Nodes (20): compilerOptions, allowArbitraryExtensions, allowJs, esModuleInterop, incremental, isolatedModules, jsx, lib (+12 more)
 
-### Community 7 - "Dulang Warehouse App"
-Cohesion: 0.29
-Nodes (8): Dulang Smartwarehouse App, Inventory Management Feature, Mobile App UI (iOS Mockup), Next/Arrow CTA Button, Onboarding Welcome Screen, Onboarding Pagination Dots, Skip Button, Warehouse Workers Illustration
+### Community 5 - "Section Components"
+Cohesion: 0.15
+Nodes (14): Footer(), [firstName, ...restNameParts], [headlinePre, headlinePost], orbs, restName, Container(), ContainerProps, Orientation (+6 more)
 
-### Community 8 - "Next.js Project Setup"
+### Community 6 - "Architecture Concepts"
+Cohesion: 0.13
+Nodes (16): CLAUDE.md Project Documentation, Centralized Content in content/portfolio.ts, useSectionInView as Context Bridge Pattern, Single-Page Portfolio Layout Pattern, articles, experiences, ProjectModal(), ProjectModalProps (+8 more)
+
+### Community 7 - "Runtime Dependencies"
+Cohesion: 0.13
+Nodes (15): dependencies, clsx, framer-motion, lucide-react, next, react, react-dom, @react-email/components (+7 more)
+
+### Community 8 - "Server Actions & Email"
+Cohesion: 0.27
+Nodes (8): isValidEmail(), sendEmail(), SendEmailResult, getErrorMessage(), validateString(), Notification(), NotificationProps, NotificationType
+
+### Community 9 - "Project Documentation"
 Cohesion: 0.32
 Nodes (8): app/page.tsx Entry Point, create-next-app CLI, Development Server, Geist Font Family, next/font Font Optimization, Next.js Framework, Next.js Portfolio Project, Vercel Deployment Platform
 
-### Community 9 - "Dulang Verify Feature"
-Cohesion: 0.33
-Nodes (7): Dulang Smart Warehouse App, Dulang Verify Screenshot, iPhone 14 Pro Verified Item, Mobile UI (iOS Mockup), Riwayat Verifikasi Screen, Stock Verification, Verification History Feature
-
-### Community 11 - "Snapmosphere Weather App"
-Cohesion: 0.40
-Nodes (6): Dark Theme Design, iPhone Mockup Screenshot, Rainy Night Weather Icon, Snapmosphere App, Splash Screen UI, Weather Mobile Application
-
-### Community 12 - "ESLint Configuration"
+### Community 10 - "ESLint Config"
 Cohesion: 0.40
 Nodes (4): compat, __dirname, eslintConfig, __filename
 
-### Community 13 - "Dulang Products Screen"
-Cohesion: 0.50
-Nodes (5): Dulang Smart Warehouse App, Dulang Product, iPhone 14 Pro Product Card, Products Screen, Samsung Smart TV Product Card
-
-### Community 14 - "Heuristic Evaluation"
-Cohesion: 0.50
-Nodes (5): Heuristic Evaluation and UI Design Enhancement, Heuristic Evaluation, Medium Article Screenshot, UI Design Enhancement, User Experience (UX)
-
-### Community 15 - "Flutter Security Article"
-Cohesion: 0.50
-Nodes (5): Prasetyo Adi Wijonarko, Flutter, Medium Article on Secure Programming, Mobile App Security, Secure Your Mobile App — Praktik Secure Programming di Proyek Flutter
-
-### Community 16 - "Teamwork & Productivity"
-Cohesion: 0.50
-Nodes (5): Medium Article: Teamwork With Tools, Prasetyo Adi Wijonarko, Meningkatkan Produktivitas (Increasing Productivity), Software Development Tools & Platforms, Teamwork With Tools
-
-### Community 17 - "Human Team Management"
+### Community 11 - "Active Section Context"
 Cohesion: 0.67
-Nodes (4): Medium Article - Human Management in a Team, Prasetyo Adi Wijonarko, Management Manusia di Dalam Sebuah Tim, Team Management / Manajemen Manusia
-
-### Community 18 - "Medium Clone UI"
-Cohesion: 0.67
-Nodes (4): Start Reading CTA Button, Hero Section, Medium Clone, Navigation Bar
-
-### Community 19 - "Quality Assurance"
-Cohesion: 0.83
-Nodes (4): Blog Article on Medium, Code Quality, Quality Assurance: Static Analysis, Static Analysis
-
-### Community 20 - "Test-Driven Development"
-Cohesion: 0.67
-Nodes (4): TDD in Software Engineering - Medium Article Screenshot, Prasetyo Adi Wijonarko, Medium Publishing Platform, Test-Driven Development (TDD)
-
-### Community 22 - "Project Monitoring"
-Cohesion: 0.67
-Nodes (3): Monitoring Your Project with Sentry - Medium Article Screenshot, Blog Post: Monitoring Your Project with Sentry, Sentry
-
-### Community 23 - "Reusable UI Components"
-Cohesion: 1.00
-Nodes (3): Membangun UI yang Konsisten dengan Reusable Component, Prasetyo Adi Wijonarko (Author), Reusable Component (UI Concept)
-
-### Community 24 - "Snackventure App"
-Cohesion: 0.67
-Nodes (3): Snackventure Brand Identity, Start Your Snackventure CTA, Snackventure App
-
-### Community 25 - "Flutter Unit Testing"
-Cohesion: 0.67
-Nodes (3): Unit Testing di Flutter: Teknik Stub dan Mock - Article Screenshot, Flutter Unit Testing with Stub and Mock Techniques, Medium Blog Article - Unit Testing di Flutter
+Nodes (3): ActiveSectionContext, ActiveSectionContextProvider Component, useActiveSectionContext Hook
 
 ## Knowledge Gaps
-- **101 isolated node(s):** `inter`, `metadata`, `resend`, `ArticleProps`, `Project` (+96 more)
+- **186 isolated node(s):** `display`, `sans`, `viewport`, `size`, `slideVariants` (+181 more)
   These have ≤1 connection - possible missing edges or undocumented components.
-- **6 thin communities (<3 nodes) omitted from report** — run `graphify query` to explore isolated nodes.
+- **85 thin communities (<3 nodes) omitted from report** — run `graphify query` to explore isolated nodes.
 
 ## Suggested Questions
 _Questions this graph is uniquely positioned to answer:_
 
-- **Why does `devDependencies` connect `Dev Build Tools` to `Runtime Dependencies`?**
-  _High betweenness centrality (0.017) - this node is a cross-community bridge._
-- **Why does `useSectionInView()` connect `Portfolio UI Components` to `Contact & Email API`, `Project Showcase Components`?**
+- **Why does `cn()` connect `Content Data & UI Utils` to `App Layout & Metadata`, `Server Actions & Email`, `Page Composition & Animation`, `Section Components`?**
+  _High betweenness centrality (0.031) - this node is a cross-community bridge._
+- **Why does `Waveform()` connect `Content Data & UI Utils` to `Page Composition & Animation`, `Section Components`?**
+  _High betweenness centrality (0.014) - this node is a cross-community bridge._
+- **Why does `useSectionInView()` connect `Page Composition & Animation` to `App Layout & Metadata`, `Content Data & UI Utils`, `Section Components`, `Architecture Concepts`, `Server Actions & Email`, `Active Section Context`?**
   _High betweenness centrality (0.013) - this node is a cross-community bridge._
-- **What connects `inter`, `metadata`, `resend` to the rest of the system?**
-  _101 weakly-connected nodes found - possible documentation gaps or missing edges._
-- **Should `Portfolio UI Components` be split into smaller, more focused modules?**
-  _Cohesion score 0.12310606060606061 - nodes in this community are weakly interconnected._
-- **Should `Runtime Dependencies` be split into smaller, more focused modules?**
-  _Cohesion score 0.08 - nodes in this community are weakly interconnected._
-- **Should `TypeScript Config` be split into smaller, more focused modules?**
-  _Cohesion score 0.1 - nodes in this community are weakly interconnected._
-- **Should `Dev Build Tools` be split into smaller, more focused modules?**
-  _Cohesion score 0.14285714285714285 - nodes in this community are weakly interconnected._
+- **Are the 2 inferred relationships involving `cn()` (e.g. with `validateString()` and `@/ Path Alias (tsconfig)`) actually correct?**
+  _`cn()` has 2 INFERRED edges - model-reasoned connections that need verification._
+- **What connects `display`, `sans`, `viewport` to the rest of the system?**
+  _186 weakly-connected nodes found - possible documentation gaps or missing edges._
+- **Should `App Layout & Metadata` be split into smaller, more focused modules?**
+  _Cohesion score 0.09615384615384616 - nodes in this community are weakly interconnected._
+- **Should `Content Data & UI Utils` be split into smaller, more focused modules?**
+  _Cohesion score 0.11088709677419355 - nodes in this community are weakly interconnected._

@@ -61,7 +61,8 @@ export default function Articles() {
             />
 
             <Reveal className="mt-10">
-                <div className="hide-scrollbar -mx-4 flex snap-x snap-mandatory gap-4 overflow-x-auto px-4 pb-4 sm:-mx-6 sm:px-6">
+                {/* Edge-fade mask dissolves cards into the scroll edges — a quiet "more this way" cue. */}
+                <div className="hide-scrollbar -mx-4 flex snap-x snap-mandatory gap-4 overflow-x-auto px-4 pb-4 [mask-image:linear-gradient(to_right,transparent,#000_4%,#000_96%,transparent)] sm:-mx-6 sm:px-6">
                     {articles.map((article) => (
                         <ArticleCard key={article.url} article={article} />
                     ))}

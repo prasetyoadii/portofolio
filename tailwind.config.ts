@@ -40,18 +40,14 @@ const config: Config = {
                 lift: '0 24px 52px -24px rgba(0,0,0,0.75)',
             },
             keyframes: {
-                wave: {
-                    '0%, 100%': { transform: 'scaleY(0.35)' },
-                    '50%': { transform: 'scaleY(1)' },
-                },
-                float: {
-                    '0%, 100%': { transform: 'translateY(0)' },
-                    '50%': { transform: 'translateY(-8px)' },
+                // A highlight that sweeps across the Waveform's track (left → right).
+                sheen: {
+                    '0%': { transform: 'translateX(-100%)' },
+                    '100%': { transform: 'translateX(200%)' },
                 },
             },
             animation: {
-                wave: 'wave 1.2s ease-in-out infinite',
-                float: 'float 7s ease-in-out infinite',
+                sheen: 'sheen 2.4s ease-in-out infinite',
             },
         },
     },

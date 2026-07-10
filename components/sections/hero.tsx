@@ -11,6 +11,7 @@ import { profile } from "@/content/portfolio";
 import { Button } from "@/components/ui/button";
 import { SocialLinks } from "@/components/ui/social-links";
 import { Container } from "@/components/ui/container";
+import { Waveform } from "@/components/ui/waveform";
 import { EASE } from "@/lib/animation";
 
 // Name as a monument: first name on its own line, the rest below it.
@@ -20,12 +21,12 @@ const restName = restNameParts.join(" ");
 // Tie the gold accent into the type by lifting one phrase out of the headline.
 const [headlinePre, headlinePost] = profile.headline.split("human-centered");
 
-// Ambient spheres — placed clear of the headline, drifting via `animate-float`
-// (frozen automatically under prefers-reduced-motion).
+// Ambient glass spheres — fully static (no motion). Subtle palette rims
+// (gold / white / blue) keep them eye-catching without drifting.
 const orbs = [
-    { className: "h-44 w-44 left-[4%] bottom-[10%]", duration: 9, delay: 0 },
-    { className: "h-24 w-24 left-[26%] bottom-[24%]", duration: 7, delay: 0.7 },
-    { className: "h-16 w-16 right-[6%] bottom-[14%]", duration: 8, delay: 1.4 },
+    { className: "h-44 w-44 left-[4%] bottom-[10%]", ring: "ring-1 ring-brand-accent/15" },
+    { className: "h-24 w-24 left-[26%] bottom-[24%]", ring: "ring-1 ring-white/10" },
+    { className: "h-16 w-16 right-[6%] bottom-[14%]", ring: "ring-1 ring-brand-primary/20" },
 ];
 
 export default function Hero() {
@@ -54,7 +55,7 @@ export default function Hero() {
             id="home"
             className="relative isolate flex min-h-[92svh] items-center overflow-hidden bg-brand-night text-white"
         >
-            {/* Background: vignette + dotted grid + drifting orbs + seam into the light body */}
+            {/* Background: vignette + dotted grid + static glass orbs + seam into the light body */}
             <div aria-hidden className="pointer-events-none absolute inset-0 -z-10">
                 <div className="absolute inset-0 bg-[radial-gradient(110%_85%_at_75%_15%,rgba(63,114,175,0.22),transparent_60%)]" />
                 <div className="absolute inset-0 bg-[radial-gradient(80%_60%_at_15%_85%,rgba(247,201,72,0.10),transparent_60%)]" />
@@ -62,8 +63,7 @@ export default function Hero() {
                 {orbs.map((orb, i) => (
                     <span
                         key={i}
-                        className={`absolute rounded-full border border-white/5 bg-[radial-gradient(circle_at_30%_25%,rgba(255,255,255,0.16),rgba(6,16,31,0.95))] shadow-[0_30px_60px_-20px_rgba(0,0,0,0.6)] animate-float ${orb.className}`}
-                        style={{ animationDuration: `${orb.duration}s`, animationDelay: `${orb.delay}s` }}
+                        className={`absolute rounded-full border border-white/5 bg-[radial-gradient(circle_at_30%_25%,rgba(255,255,255,0.18),rgba(6,16,31,0.95))] shadow-[0_30px_60px_-20px_rgba(0,0,0,0.6)] ${orb.ring} ${orb.className}`}
                     />
                 ))}
             </div>
@@ -81,11 +81,6 @@ export default function Hero() {
                             transition={{ duration: 0.5, ease: EASE }}
                             className="inline-flex items-center gap-2 rounded-full border border-white/15 bg-white/5 px-3 py-1.5 text-xs font-medium text-white/80 backdrop-blur-sm"
                         >
-                            <span className="relative flex h-2 w-2">
-                                <span className="absolute inline-flex h-full w-full animate-ping rounded-full bg-brand-accent opacity-75" />
-                                <span className="relative inline-flex h-2 w-2 rounded-full bg-brand-accent" />
-                            </span>
-                            Open to opportunities
                         </motion.span>
 
                         <motion.h1
@@ -105,7 +100,7 @@ export default function Hero() {
                             className="mt-6 max-w-xl text-pretty text-base text-white/70 sm:text-lg"
                         >
                             {headlinePre}
-                            <span className="font-medium text-brand-accent">human-centered</span>
+                            {/* <span className="font-medium text-brand-accent">human-centered</span> */}
                             {headlinePost}
                         </motion.p>
 
@@ -148,6 +143,16 @@ export default function Hero() {
                         transition={{ duration: 0.8, delay: 0.1, ease: EASE }}
                         className="relative mx-auto w-full max-w-md lg:mx-0"
                     >
+                        {/* Gold halo bleeding out behind the card — warmth + depth. */}
+                        <div
+                            aria-hidden
+                            className="absolute -inset-6 -z-10 rounded-[2.5rem] bg-[radial-gradient(60%_60%_at_70%_20%,rgba(247,201,72,0.22),transparent_70%)] blur-2xl"
+                        />
+                        {/* Stacked backing plate — a second surface peeking out for z-axis depth. */}
+                        <div
+                            aria-hidden
+                            className="absolute inset-0 -z-[5] translate-x-4 translate-y-5 rounded-[2rem] border border-white/10 bg-white/[0.03] shadow-[0_40px_80px_-50px_rgba(0,0,0,0.9)]"
+                        />
                         <div className="relative aspect-[4/5] overflow-hidden rounded-[2rem] border border-white/10 shadow-[0_50px_90px_-40px_rgba(0,0,0,0.8)] ring-1 ring-white/5">
                             <Image
                                 src={profile.avatar}
@@ -157,8 +162,27 @@ export default function Hero() {
                                 className="object-cover object-center"
                                 priority
                             />
-                            <div className="absolute inset-0 bg-gradient-to-t from-brand-night-deep/55 via-transparent to-transparent" />
+                            {/* Stronger floor gradient grounds the floating credential chip. */}
+                            <div className="absolute inset-0 bg-gradient-to-t from-brand-night-deep/80 via-brand-night-deep/10 to-transparent" />
                         </div>
+
+                        {/* Floating credential — overlaps the corner, breaking the frame for depth.
+                        <motion.div
+                            initial={reduce ? { opacity: 0 } : { opacity: 0, y: 12, scale: 0.95 }}
+                            animate={{ opacity: 1, y: 0, scale: 1 }}
+                            transition={{ duration: 0.6, delay: 0.55, ease: EASE }}
+                            className="absolute -bottom-4 left-4 flex items-center gap-3 rounded-2xl border border-white/12 bg-brand-night/85 px-4 py-2.5 shadow-[0_24px_50px_-24px_rgba(0,0,0,0.85)] backdrop-blur-md"
+                        >
+                            <span className="flex h-9 w-9 items-center justify-center rounded-xl bg-brand-accent/15 ring-1 ring-brand-accent/25">
+                                <Waveform size="sm" tone="accent" />
+                            </span>
+                            <span className="leading-tight">
+                                <span className="block font-display text-sm font-semibold text-white">
+                                    {profile.role}
+                                </span>
+                                <span className="block text-xs text-white/55">{profile.location}</span>
+                            </span>
+                        </motion.div> */}
                     </motion.div>
                 </div>
             </Container>

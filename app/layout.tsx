@@ -112,6 +112,8 @@ export default function RootLayout({
           <div className="absolute bottom-[-6rem] right-[12%] h-[28rem] w-[28rem] rounded-full bg-brand-primary/12 blur-[130px]" />
           <div className="absolute bottom-[6%] left-[18%] h-[22rem] w-[22rem] rounded-full bg-brand-accent/[0.07] blur-[130px]" />
           <div className="absolute inset-0 bg-grid-dark opacity-60" />
+          {/* Film grain — sits above the glows to unify and de-flatten the canvas. */}
+          <div className="absolute inset-0 bg-noise opacity-[0.04] mix-blend-soft-light" />
         </div>
 
         <JsonLd />
