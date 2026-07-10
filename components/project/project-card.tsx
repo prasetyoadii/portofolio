@@ -109,10 +109,10 @@ export function ProjectCard({ project }: { project: Project }) {
                         aria-hidden
                         className="pointer-events-none absolute -right-20 -top-20 h-64 w-64 rounded-full bg-brand-accent/10 blur-3xl"
                     />
+                    {/* Row 1 — Title + Description | Video */}
                     <div className="relative grid gap-6 lg:grid-cols-[1.55fr_1fr] lg:gap-8">
                         <div className="flex flex-col">
                             <div className="flex flex-wrap items-center gap-2.5">
-                                {/* <Badge tone="gold">Featured</Badge> */}
                                 <Badge>{project.type}</Badge>
                             </div>
                             <h3 className="mt-4 font-display text-2xl font-bold tracking-tight text-brand-ink sm:text-3xl">
@@ -122,31 +122,8 @@ export function ProjectCard({ project }: { project: Project }) {
                             <p className="mt-3 max-w-xl text-sm text-brand-muted sm:text-base">
                                 {project.description}
                             </p>
-
-                            {project.highlights && (
-                                <ul className="mt-5 grid gap-x-5 gap-y-2 sm:grid-cols-2">
-                                    {project.highlights.map((highlight) => (
-                                        <li
-                                            key={highlight}
-                                            className="flex items-start gap-2 text-sm text-brand-ink"
-                                        >
-                                            <span
-                                                aria-hidden
-                                                className="mt-1.5 h-1.5 w-1.5 flex-shrink-0 rounded-full bg-brand-accent"
-                                            />
-                                            <span>{highlight}</span>
-                                        </li>
-                                    ))}
-                                </ul>
-                            )}
-
-                            <div className="mt-5 space-y-3">
-                                {tagRow}
-                                {actions}
-                            </div>
                         </div>
 
-                        {/* Video demo — shows YouTube embed when videoUrl is set, decorative panel otherwise. */}
                         {project.videoUrl ? (
                             <div className="hidden lg:block">
                                 <YouTubeEmbed url={project.videoUrl} title={project.title} />
@@ -163,6 +140,30 @@ export function ProjectCard({ project }: { project: Project }) {
                                 </p>
                             </div>
                         )}
+                    </div>
+
+                    {/* Row 2 — Highlights + Tags + Actions */}
+                    <div className="mt-6 border-t border-brand-accent/15 pt-6">
+                        {project.highlights && (
+                            <ul className="grid gap-x-5 gap-y-2 sm:grid-cols-2">
+                                {project.highlights.map((highlight) => (
+                                    <li
+                                        key={highlight}
+                                        className="flex items-start gap-2 text-sm text-brand-ink"
+                                    >
+                                        <span
+                                            aria-hidden
+                                            className="mt-1.5 h-1.5 w-1.5 flex-shrink-0 rounded-full bg-brand-accent"
+                                        />
+                                        <span>{highlight}</span>
+                                    </li>
+                                ))}
+                            </ul>
+                        )}
+                        <div className="mt-4 space-y-3">
+                            {tagRow}
+                            {actions}
+                        </div>
                     </div>
                 </article>
 

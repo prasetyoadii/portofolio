@@ -159,7 +159,7 @@ export const projects: Project[] = [
             "Docker",
         ],
         featured: true,
-        videoUrl: "https://www.youtube.com/watch?v=Hk-NmEhTSo8",
+        videoUrl: "https://youtu.be/0_j8oejAeBI",
     },
     {
         title: "Dulang Smartwarehouse App",
