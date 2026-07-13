@@ -29,7 +29,7 @@ export default function Skills() {
 
             <div className="mx-auto mt-10 grid max-w-4xl gap-4 sm:grid-cols-2">
                 {skillGroups.map((group, i) => (
-                    <Reveal key={group.label} delay={i * 0.06}>
+                    <Reveal key={group.label} delay={i * 0.06} subtle>
                         <Card interactive className="h-full p-5 sm:p-6">
                             <div className="flex items-center justify-between gap-3">
                                 <h3 className="flex items-center gap-2 font-display text-sm font-semibold uppercase tracking-wider text-brand-accent">

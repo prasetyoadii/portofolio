@@ -2,7 +2,6 @@ import Link from "next/link";
 import { navLinks, profile } from "@/content/portfolio";
 import { Container } from "@/components/ui/container";
 import { SocialLinks } from "@/components/ui/social-links";
-import { Waveform } from "@/components/ui/waveform";
 
 export default function Footer() {
     return (
@@ -19,8 +18,6 @@ export default function Footer() {
                         className="inline-flex items-center gap-2 font-display text-lg font-bold text-brand-ink"
                     >
                         {profile.shortName}
-                        <span className="text-brand-accent">.</span>
-                        <Waveform size="sm" tone="accent" />
                     </Link>
                     <p className="mt-2 max-w-xs text-sm text-brand-muted">
                         {profile.role} · {profile.location}. Open to opportunities.

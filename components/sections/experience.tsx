@@ -54,7 +54,7 @@ export default function Experience() {
                                         : "from-brand-primary to-brand-primary-dark",
                                 )}
                             />
-                            <Reveal delay={i * 0.06}>
+                            <Reveal delay={i * 0.06} subtle>
                                 {/* Gradient layers over the Card's surface color — no class conflict. */}
                                 <Card
                                     className={cn(

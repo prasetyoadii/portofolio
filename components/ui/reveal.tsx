@@ -8,6 +8,12 @@ interface RevealProps {
     children: ReactNode;
     className?: string;
     delay?: number;
+    /**
+     * Fade-only replay: no y-rise/scale on enter or exit. Use for tightly
+     * stacked lists (e.g. a timeline) where the position/scale jump between
+     * closely-spaced items reads as jumping rather than a smooth reveal.
+     */
+    subtle?: boolean;
 }
 
 /**
@@ -17,14 +23,14 @@ interface RevealProps {
  *
  * Reduced motion: drops to a one-shot opacity fade with no replay or scaling.
  */
-export function Reveal({ children, className, delay = 0 }: RevealProps) {
+export function Reveal({ children, className, delay = 0, subtle = false }: RevealProps) {
     const reduce = useReducedMotion();
 
     const variants: Variants = {
         hidden: {
             opacity: 0,
-            y: reduce ? 0 : 28,
-            scale: reduce ? 1 : 0.97,
+            y: reduce || subtle ? 0 : 28,
+            scale: reduce || subtle ? 1 : 0.97,
             transition: { duration: 0.4, ease: EASE },
         },
         show: {
