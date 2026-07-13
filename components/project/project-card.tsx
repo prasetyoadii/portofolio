@@ -29,7 +29,7 @@ export function ProjectCard({ project }: { project: Project }) {
     const isFigma = project.github?.includes("figma.com");
     const linkHref = project.demo ?? project.github;
     const linkLabel = project.demo
-        ? "Live demo"
+        ? "View website"
         : isFigma
           ? "View prototype"
           : "View on GitHub";
@@ -88,7 +88,7 @@ export function ProjectCard({ project }: { project: Project }) {
                     onClick={(e) => e.stopPropagation()}
                     className="inline-flex items-center gap-1.5 rounded-full border border-[color:var(--line)] bg-brand-surface px-4 py-2 text-sm font-medium text-brand-ink transition-all hover:-translate-y-0.5 hover:border-brand-primary/40 hover:text-brand-primary active:translate-y-0 focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-brand-primary/60 focus-visible:ring-offset-2 focus-visible:ring-offset-brand-surface"
                 >
-                    {isFigma ? (
+                    {project.demo || isFigma ? (
                         <FiArrowUpRight className="h-4 w-4" />
                     ) : (
                         <FaGithub className="h-4 w-4" />
@@ -125,7 +125,7 @@ export function ProjectCard({ project }: { project: Project }) {
                         </div>
 
                         {project.videoUrl ? (
-                            <div className="hidden lg:block">
+                            <div>
                                 <YouTubeEmbed url={project.videoUrl} title={project.title} />
                             </div>
                         ) : (
@@ -194,6 +194,7 @@ export function ProjectCard({ project }: { project: Project }) {
                             src={images[0]}
                             alt={`${project.title} preview`}
                             fill
+                            quality={95}
                             sizes="(max-width: 640px) 90vw, 460px"
                             className="object-cover object-top transition-transform duration-500 group-hover:scale-[1.04]"
                         />
@@ -221,12 +222,12 @@ export function ProjectCard({ project }: { project: Project }) {
                         <h3 className="font-display text-lg font-semibold text-brand-ink sm:text-xl">
                             {project.title}
                         </h3>
-                        <p className="mt-0.5 text-sm font-medium text-brand-primary">
+                        <p className="mt-0.5 text-base font-medium text-brand-primary">
                             {project.tagline}
                         </p>
                     </div>
 
-                    <p className="text-sm text-brand-muted">{project.description}</p>
+                    <p className="text-base text-brand-muted">{project.description}</p>
 
                     {tagRow}
                     {actions}

@@ -15,7 +15,6 @@ import dulangProductImg from "@/public/dulang-product.png";
 import dulangVerifyImg from "@/public/dulang-verify.png";
 import mediumCloneImg from "@/public/medium-clone.png";
 import snackventureImg from "@/public/snackventure.png";
-import snapmosphereImg from "@/public/snapmosphere.png";
 import monitoringImg from "@/public/monitoring.png";
 import manageHumanImg from "@/public/manage-human.png";
 import teamworkImg from "@/public/teamwork-tools.png";
@@ -26,6 +25,7 @@ import unitTestingImg from "@/public/stub-mock.png";
 import tddImg from "@/public/tdd.png";
 import bestPracticeImg from "@/public/best-practice.png";
 import heuristicEvalImg from "@/public/heuristic-eval.png";
+import formattinAjaImg from "@/public/formattin-aja.png";
 
 // --- Icons --------------------------------------------------------------------
 import {
@@ -136,9 +136,9 @@ export const projects: Project[] = [
     {
         title: "SeniorCare",
         type: "Mobile",
-        tagline: "Gerontechnology platform for older adults & caregivers",
+        tagline: " Gerontechnology App with AI Voice Assistant for Elderly Care and Caregiver Support",
         description:
-            "Built a gerontechnology mobile application to support caregivers and elderly users in daily activities, featuring scheduling, elderly condition logging, data export, light games, and a community forum.",
+            "Developed an Android-based mobile application designed to support elderly independence in daily activities while enabling caregivers to monitor elderly conditions more effectively. The app was built using a User-Centered Design (UCD) approach combined with Agile Scrum methodology, featuring an AI Voice Assistant, schedule reminders, emergency SOS calls, daily health record logging, light exercise guidance, cognitive games, and a caregiver support forum.",
         highlights: [
             "Schedule & reminder automation with push notifications",
             "Health logging and caregiver monitoring dashboard",
@@ -160,6 +160,16 @@ export const projects: Project[] = [
         ],
         featured: true,
         videoUrl: "https://youtu.be/0_j8oejAeBI",
+    },
+    {
+        title: "Formattinaja",
+        type: "Website",
+        tagline: "Thesis formatting service for students",
+        description:
+            "A web platform offering a thesis/skripsi formatting service, helping students get their documents formatted to their campus's required standards.",
+        tags: ["Next.js", "TypeScript", "Tailwind CSS"],
+        imageUrl: [formattinAjaImg],
+        demo: "https://formattinaja.vercel.app/",
     },
     {
         title: "Dulang Smartwarehouse App",
@@ -189,17 +199,6 @@ export const projects: Project[] = [
         tags: ["Laravel", "PHP", "SQLite", "Tailwind"],
         imageUrl: [mediumCloneImg],
         github: "https://github.com/prasetyoadii/medium-clone",
-    },
-    {
-        title: "Snapmosphere Prototype",
-        type: "Design",
-        tagline: "Disaster-alert prototype with evacuation info",
-        description:
-            "A prototype that provides natural-disaster alerts, evacuation site information, and educational content based on a user's registered location.",
-        tags: ["Figma"],
-        imageUrl: [snapmosphereImg],
-        github:
-            "https://www.figma.com/proto/CoYKK70WssNY2CA620d7JB/Kelas-D_Template-4_Screenshot?page-id=10%3A2&node-id=152-2408&p=f&viewport=48%2C300%2C0.13&t=adv6KBz3K8ZdpI2d-1&scaling=scale-down&content-scaling=fixed&starting-point-node-id=152%3A12110&show-proto-sidebar=1",
     },
 ];
 
